@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*
+=================================================
+
+　                Reset CSS
+
+HTML5の各要素の体裁をリセットするCSSです
+=================================================
+*/
+
+html, body {
+	background: #FFFFFF;
+	color: #000000;
+}
+
+body, div, span,
+h1, h2, h3, h4, h5, h6,
+dl, dt, dd, ul, ol, li, dfn,
+p, blockquote, pre, code, abbr, address, cite, del,
+strong, em, img, b, i, small,
+table, thead, tbody, tfoot, tr, th, td, caption,
+object, iframe, form, fieldset, legend, label {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 13px/1 "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body.mac {
+	font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Osaka", sans-serif;
+}
+* html body {font-size: small;}
+*:first-child+html body {font-size: small;}
+head~/* */body {font-size: small;}
+html:not(:target) body {font-size: 13px;}
+
+#document {font-size: 77%;} /* 10px */
+
+
+img {
+	border: none;
+	vertical-align: bottom;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+strong, dt, dfn {
+	font-style: normal;
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+	font-weight: normal;
+}
+
+address, caption, cite, code, th {
+	font-style: normal;
+	font-weight: normal;
+}
+
+sup { vertical-align: text-top;    font-size: 0.75em; line-height: 1; }
+sub { vertical-align: text-bottom; font-size: 0.75em; line-height: 1; }
+
+input,textarea,select {margin: 0; font-family: inherit; font-size: inherit; font-weight:inherit;}
+* html input,* html textarea,* html select {font-size: 100%;}
+*:first-child+html+input,*:first-child html+textarea,*:first-child+html select {font-size: 100%;}
+head~/* */body input, head~/* */body textarea, head~/* */body select {font-size: 100%;}
+html:not(:target) body input, html:not(:target) body textarea, html:not(:target) body select {font-size: inherit;}
+
+pre, code { font-family: monospace; }
+
+fieldset {
+	border: none;
+}
+
+table {border-collapse: collapse; border-spacing: 0; font-size: inherit;}
+th,td {vertical-align: top;}
+caption {text-align: left;}
+
+ul, dl, ol {
+	text-indent: 0;
+}
+
+li {
+	list-style: none;
+	list-style-position: outside;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+audio, video {
+	margin: 0;
+	padding: 0;
+}
