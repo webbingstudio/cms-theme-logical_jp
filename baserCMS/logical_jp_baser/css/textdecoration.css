@@ -283,7 +283,7 @@ CMS関連の自由文に関するCSSです
 	display: -moz-inline-box;
 	display: inline-block;
 	width: 16px;
-	height: 14px;
+	height: 16px;
 	margin-right: .5em;
 	background: url(../images/base/arrow_01_gray.png) 0 0 no-repeat;
 	vertical-align: middle;

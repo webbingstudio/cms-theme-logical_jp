@@ -77,9 +77,19 @@
 		text-decoration: none;
 	}
 	#footer .backToTop a.up {
+		-webkit-border-radius: 6px 0 0 0;
+		-moz-border-radius: 6px 0 0 0;
+		-ms-border-radius: 6px 0 0 0;
+		-o-border-radius: 6px 0 0 0;
+		border-radius: 6px 0 0 0;
 		background-position: 50% -290px;
 	}
 	#footer .backToTop a.down {
+		-webkit-border-radius: 0 0 0 6px;
+		-moz-border-radius: 0 0 0 6px;
+		-ms-border-radius: 0 0 0 6px;
+		-o-border-radius: 0 0 0 6px;
+		border-radius: 0 0 0 6px;
 		background-position: 50% -378px;
 	}
 	#footer .backToTop a:hover {
@@ -749,14 +759,14 @@
 	border-style: solid;
 	border-width: 3px 0 0;
 	border-color: #999;
-	font-size: 160%;
+	font-size: 140%;
 	border-radius: 0;
 }
 
 	.widget h2 {
 		margin: 0 0 1em;
 		padding: 0 .88em;
-		font-size: 112.5%; /* 18px */
+		font-size: 114.3%; /* 16px */
 		vertical-align: bottom;
 	}
 
@@ -783,10 +793,10 @@
 	width: 200px;
 }
 
-#document .widget-blog-calendar table tr th,
-#document .widget-blog-calendar table tr td {
-	font-size: 87.5%; /* 14px */
-}
+	#document .widget-blog-calendar table tr th,
+	#document .widget-blog-calendar table tr td {
+		font-size: 100%; /* 14px */
+	}
 
 #document .widget #ContentSearchForm {
 	margin: 0 1em;
@@ -820,6 +830,11 @@
 	#main .categoryHeader h1 {
 		font-size: 240%;
 		text-align: center;
+	}
+
+	#main .categoryHeader .categoryDesc {
+		margin: .5em 1em;
+		font-size: 140%;
 	}
 
 #main #ContentsNavi a,
@@ -874,6 +889,10 @@
 #main .mailForm table tr td  #FieldMessageNameKana1 .mail-before-attachment,
 #main .mailForm table tr td  #FieldMessageNameKana2 .mail-before-attachment {
 	margin-right: 0;
+}
+
+#main #BlogComment #BlogCommentAddForm .auth-captcha input#BlogCommentAuthCaptcha {
+	margin-bottom: .5em;
 }
 
 }

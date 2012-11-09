@@ -51,8 +51,8 @@ $bcBaser->css(array('reset', 'base', 'parts', 'textdecoration'));
 if($bcBaser->isHome()) {
 	$bcBaser->css(array('home'));
 }
-if($wsLogColor == 'blue') {
-	$bcBaser->css(array('color_blue'));
+if(!empty($wsLogColor)) {
+	$bcBaser->css(array('color_' . $wsLogColor));
 }
 ?>
 <?php $bcBaser->js(array('jquery', 'common')) ?>

@@ -689,12 +689,13 @@ body {
 			color: #333;
 			font-size: 120%;
 			font-weight: normal;
-			font-size: 133.3%; /* 16px */
+			line-height: 133.3%; /* 16px */
 		}
 
 		#main .headline .post h1 a,
 		#main .headline .post h1 a:visited {
 			color: #333;
+			text-decoration: none;
 		}
 
 
@@ -1138,7 +1139,6 @@ body {
 }
 
 #wrapper #main .article .articleContents {
-	font-size: 160%;
 	margin: 0 1em;
 }
 
@@ -1156,8 +1156,11 @@ body {
 }
 
 #main .posts .post .postContents {
-	font-size: 160%;
 	margin: 0 1em;
+}
+
+#main .headline .post {
+		padding: .8em 1em;
 }
 
 #wrapper #sub {

@@ -687,13 +687,13 @@
 	padding-right: 1em;
 }
 
-	#main #topHeadline .sectionContents .post a {
-		padding-left: 1em;
-		padding-right: 1em;
-	}
+		#main .headline .post p.date {
+			font-size: 120%;
+		}
 
-		#main #topHeadline .sectionContents .post a h1 {
-			font-size: 160%;
+		#main .headline .post h1 {
+			font-size: 140%;
+			line-height: 1.286; /* 18px */
 		}
 
 #main .contents #fbPage {
