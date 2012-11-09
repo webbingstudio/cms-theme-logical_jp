@@ -31,13 +31,13 @@
 	#main .socialS .twitter { width: 105px; }
 	#main .socialS .facebook { width: 110px; }
 	#main .socialS .google { width: 70px; }
-	#main .socialS .mixi { width: 90px; }
+	#main .socialS .mixi { width: 83px; }
 	#main .socialS .hatena { width: 60px; }
 	#main .socialS .weibo { width: 65px; }
 
 	#main .socialL .twitter { width: 130px; }
 	#main .socialL .google { width: 80px; }
-	#main .socialL .mixi { width: 90px; }
+	#main .socialL .mixi { width: 83px; }
 	#main .socialL .hatena { width: 115px; }
 	#main .socialL .weibo { width: 65px; }
 
@@ -322,6 +322,7 @@
 }
 
 #main #BlogComment #BlogCommentList .comment {
+	position: relative;
 	margin: 0 0 1.6em 2em;
 	line-height: 1.5em;
 	background: #EEE;

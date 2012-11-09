@@ -14,25 +14,25 @@
 	シェアボタン</h3>
 <ul>
 	<li>
-		Twitter</li>
+		Twitter: ツイート</li>
 	<li>
-		Facebook</li>
+		Facebook: いいね！</li>
 	<li>
-		Google+</li>
+		Google: +1</li>
 	<li>
-		はてなブックマーク</li>
+		mixi: イイネ！</li>
 	<li>
-		weibo</li>
+		はてなブックマーク: ブックマークする</li>
+	<li>
+		weibo: 投稿する</li>
 </ul>
-<p>
-	※mixiのいいね！ボタンは今後対応予定です。</p>
 <h3>
 	その他</h3>
 <ul>
 	<li>
-		Facebookコメント</li>
+		Facebook: コメント</li>
 	<li>
-		Facebookページ紹介枠</li>
+		Facebook: Facebookページ紹介枠</li>
 </ul>
 <h2>
 	OGP(Open Graph Protocol)</h2>

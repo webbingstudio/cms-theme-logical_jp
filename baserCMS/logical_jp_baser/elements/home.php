@@ -103,6 +103,14 @@ if($wsLogSnsBtn['twitter'] == 1): ?>
 	<!-- /.google --></div>
 <?php endif ?>
 
+<?php
+global $wsLogMixiDevKey;
+if($wsLogSnsBtn['mixi'] == 1): ?>
+	<div class="mixi">
+<div data-plugins-type="mixi-favorite"<?php if(isset($wsLogMixiDevKey)){ echo ' data-service-key="' . $wsLogMixiDevKey . '"'; } ?> data-size="large" data-href="<?php echo $bcBaser->url($bcBaser->getHere() , true); ?>" data-show-faces="false" data-show-count="true" data-show-comment="true" data-width=""></div><script type="text/javascript">(function(d) {var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//static.mixi.jp/js/plugins.js#lang=ja';d.getElementsByTagName('head')[0].appendChild(s);})(document);</script>
+	<!-- /.mixi --></div>
+<?php endif ?>
+
 <?php if($wsLogSnsBtn['hatena'] == 1): ?>
 	<div class="hatena">
 <a href="http://b.hatena.ne.jp/entry/<?php $bcBaser->url( $bcBaser->getRoot() , true ); ?>" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>

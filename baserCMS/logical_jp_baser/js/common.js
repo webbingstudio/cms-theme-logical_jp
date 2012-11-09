@@ -53,7 +53,7 @@ $(window)
 			WSbrowser = 'full';
 		}
 		if(WSbrowser == 'sp'){
-			$('#footer .backToTop, #main .socialS, #main #contentsWrapper .socialW').remove();
+			$('#main #commentFb, #footer .backToTop, #main .socialS, #main #contentsWrapper .socialW').remove();
 		} else {
 			$('#footer').append('<p class="backToTop"><a href="#document" class="up">ページ先頭</a><a href="#footer" class="down">ページ末尾</a></p>');
 			$('#footer .backToTop').WSscrollFix();

@@ -30,6 +30,11 @@ a:visited
 #main #BlogComment #BlogCommentList .comment
 { background: #EBEEE5; }
 
+	#document #main #BlogComment #BlogCommentList .comment:after {
+		border-color: transparent transparent #EBEEE5 transparent;
+	}
+
+
 #header #headerNav ul li a:hover,
 #header #headerNav ul li a:focus,
 #globalNav ul li ul,

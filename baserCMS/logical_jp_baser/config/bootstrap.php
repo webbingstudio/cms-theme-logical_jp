@@ -24,7 +24,7 @@ $wsLogHomeSummary['posts'][] = array(
 // 概要２セット目
 $wsLogHomeSummary['posts'][] = array(
 	'title' => 'ソーシャルメディア対応',
-	'summary' => 'Twitter・Facebook・Google+はもちろん、はてなブックマーク、中国圏のSNS「weibo」にも対応。シェアには欠かせないOGPも実装しています。',
+	'summary' => 'Twitter・Facebook・Google+はもちろん、mixi・はてなブックマーク・中国圏のSNS「weibo」にも対応。シェアには欠かせないOGPも実装しています。',
 	'img' => '/images/home/summary_02.jpg',
 	'url' => 'logical/point02',
 );
@@ -69,6 +69,11 @@ $wsLogUseFbComment = 1;
 global $wsLogFbAdminID;
 //$wsLogFbAdminID = '000000000000000';
 
+/* mixiいいね！ボタンを利用する場合は、開発者キーを指定してください
+------------------------------------------------------------- */
+global $wsLogMixiDevKey;
+//$wsLogMixiDevKey = '0000000000000000000000000000000000000000';
+
 /* OGP画像があれば、URLを「フルパスで」指定してください
 ------------------------------------------------------------- */
 global $wsLogOGPImg;
@@ -86,8 +91,9 @@ $wsLogSnsBtn = array(
 	'facebook' => 1,
 	'twitter' => 1,
 	'google' => 1,
-	'hatena' => 1,
-	'weibo' => 1,
+	'mixi' => 0,
+	'hatena' => 0,
+	'weibo' => 0,
 );
 
 ?>
