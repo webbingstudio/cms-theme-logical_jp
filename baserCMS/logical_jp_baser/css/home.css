@@ -619,26 +619,95 @@
 	height: auto !important;
 }
 
-#main #pickup .post .figure h1 a {
-	font-size: 160%;
-	width: 90%;
-	padding: .5em 5%;
+	#main #pickup .post .figure h1 {
+		position: static;
+	}
+
+		#main #pickup .post .figure h1 a {
+			font-size: 160%;
+			width: 90%;
+			padding: .5em 5%;
+		}
+
+		#main #pickup .post .figure img {
+			position: static !important;
+			width: 100%;
+			height: auto;
+		}
+
+#main #topSummary .sectionHeader {
+	margin: 0;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
-#main #pickup .post .figure img {
-	position: static !important;
-	width: 100%;
-	height: auto;
+#main #topSummary .sectionContents .post {
+	float: none;
+	width: auto;
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 0 0 1px;
+	margin: 0 !important;
 }
 
-#main #pickup .post .postContents p.summary {
+	#main #topSummary .sectionContents .post a {
+		padding: 1em;
+	}
+
+		#main #topSummary .sectionContents .post a figure {
+			float: left;
+			width: 100px !important;
+			height: 63px !important;
+			margin: 0 1em 1em 0;
+		}
+
+			#main #topSummary .sectionContents .post a figure img {
+				position: static;
+				width: 100%;
+				height: auto;
+			}
+
+	#main #topSummary .sectionContents .post a .postContents {
+		padding: 0;
+	}
+
+		#main #topSummary .sectionContents .post a .postContents h1 {
+			padding: 1em 0 0;
+			border: 0 none;
+		}
+
+		#main #topSummary .sectionContents .post a .postContents p.summary {
+			clear: both;
+			margin-bottom: 0;
+			font-size: 140%;
+		}
+
+#main #topHeadline .sectionHeader {
+	padding-left: 1em;
+	padding-right: 1em;
 }
+
+	#main #topHeadline .sectionContents .post a {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+		#main #topHeadline .sectionContents .post a h1 {
+			font-size: 160%;
+		}
 
 #main .contents #fbPage {
 	float: none;
 	width: auto;
 	margin: 0 1em 1.6em;
 }
+
+	#main .contents #fbPage h1 {
+		height: auto;
+		line-height: 1.22; /* 22px */
+		padding-left: 50px;
+		font-size: 180%;
+	}
 
 #main .contents .banner {
 	margin: 0 1em 1em;
@@ -656,10 +725,10 @@
 		display: block;
 		vertical-align: middle;
 		width: auto;
-		max-width: 155px;
+		max-width: 158px;
 		height: 62px;
 		margin: 0 auto;
-		padding-left: 80px;
+		padding-left: 90px;
 		background-position: -7px -1px;
 		border-style: solid;
 		border-color: #A9C0D9;
@@ -669,73 +738,17 @@
 
 	#main .contents .twitterBtn a .caption {
 		font-size: 110%;
+		padding: .7em 0;
 	}
 
 	#main .contents .twitterBtn a .twitterID {
 		font-size: 160%;
 	}
 
-
-#main #topSummary .sectionHeader {
-    margin: 0;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-#main #topSummary .sectionContents .post {
+#main .contents .social {
 	float: none;
 	width: auto;
-	border-style: solid;
-	border-color: #CCC;
-	border-width: 0 0 1px;
-	margin: 0 !important;
-}
-
-#main #topSummary .sectionContents .post a {
-	padding: 1em;
-}
-
-#main #topSummary .sectionContents .post a figure {
-	float: left;
-	width: 100px !important;
-	height: 63px !important;
-	margin: 0 1em 1em 0;
-}
-
-#main #topSummary .sectionContents .post a figure img {
-	position: static;
-	width: 100%;
-	height: auto;
-}
-
-#main #topSummary .sectionContents .post a .postContents {
-	padding: 0;
-}
-
-#main #topSummary .sectionContents .post a .postContents h1 {
-	padding: 1em 0 0;
-	border: 0 none;
-}
-
-#main #topSummary .sectionContents .post a .postContents p.summary {
-    clear: both;
-    margin-bottom: 0;
-    font-size: 140%;
-}
-
-
-#main #topHeadline .sectionHeader {
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-#main #topHeadline .sectionContents .post a {
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-#main #topHeadline .sectionContents .post a h1 {
-    font-size: 160%;
+	margin: 0 1em;
 }
 
 }
