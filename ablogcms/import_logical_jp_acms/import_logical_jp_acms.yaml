@@ -6200,7 +6200,7 @@ config:
     config_blog_id: 6
   - 
     config_key: banner_img
-    config_value: 003/201210/507ed2765f1a2.jpg
+    config_value: 006/201211/507ed2765f1a2.jpg
     config_sort: 56
     config_rule_id: 
     config_module_id: 65
@@ -6221,7 +6221,7 @@ config:
     config_blog_id: 6
   - 
     config_key: banner_img
-    config_value: 003/201210/507ed2af10f28.jpg
+    config_value: 006/201211/507ed2af10f28.jpg
     config_sort: 57
     config_rule_id: 
     config_module_id: 65
@@ -8613,7 +8613,7 @@ field:
     field_blog_id: 6
   - 
     field_key: blogHeaderLogo@path
-    field_value: 003/201211/509d41afcdd7e.png
+    field_value: 006/201211/509d41afcdd7e.png
     field_sort: 1
     field_search: off
     field_eid: 
@@ -8653,7 +8653,7 @@ field:
     field_blog_id: 6
   - 
     field_key: blogOgpImage@tinyPath
-    field_value: 003/201211/tiny-509d41afbfec5.jpg
+    field_value: 006/201211/tiny-509d41afbfec5.jpg
     field_sort: 1
     field_search: off
     field_eid: 
@@ -8693,7 +8693,7 @@ field:
     field_blog_id: 6
   - 
     field_key: blogOgpImage@path
-    field_value: 003/201211/509d41afbfec5.jpg
+    field_value: 006/201211/509d41afbfec5.jpg
     field_sort: 1
     field_search: off
     field_eid: 
