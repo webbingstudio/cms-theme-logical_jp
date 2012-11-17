@@ -45,9 +45,11 @@ baserCMS 2.0.4以上
 利用条件
 ------------------------------------
 
-baserCMSのライセンス規定に準じます。個人・商用ともご自由にお使いください。  
-http://basercms.net/about/license
+baserCMSのライセンス規定に準じ、MITライセンスで提供します。  
+個人・商用ともご自由にお使いください。  
+http://basercms.net/about/license  
+http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license
 
-今後、このテーマに関する解説資料や、拡張を有償で提供する可能性があります。これらに関しては、上記ライセンスの限りではありません。
+今後、このテーマに関する解説資料や、拡張を有償で提供する可能性があります。これらに関しては、上記ライセンスの限りではありません。  
 
 以上
