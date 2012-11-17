@@ -1,0 +1,13 @@
+---
+entry_tag-relational_order: relationality
+entry_tag-relational_limit: 5
+entry_tag-relational_pager_cur_attr: class="cur"
+entry_tag-relational_indexing: on
+entry_tag-relational_secret: off
+mo_entry_tag-relational_notfound: off
+entry_tag-relational_noimage: on
+entry_tag-relational_image_x: 100
+entry_tag-relational_image_y: 100
+entry_tag-relational_image_trim: on
+entry_tag-relational_image_zoom: off
+entry_tag-relational_image_center: off

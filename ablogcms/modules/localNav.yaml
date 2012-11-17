@@ -1,0 +1,11 @@
+---
+entry_list_order: datetime-desc
+category_entry_list_category_order: sort-asc
+entry_list_limit: 10
+category_entry_list_category_indexing: on
+entry_list_offset: 0
+category_entry_list_level: 2
+category_entry_list_entry_order: datetime-asc
+category_entry_list_entry_limit: 5
+category_entry_list_entry_indexing: on
+category_entry_list_entry_amount_zero: on

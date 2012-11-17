@@ -1,0 +1,78 @@
+---
+navigation_label: 
+  - ホーム
+  - 業務内容
+  - 業務内容１
+  - 業務内容２
+  - 業務内容３
+  - 会社概要
+  - 会社概要１
+  - 会社概要２
+  - 会社概要３
+  - テーマ紹介
+  - 新着情報
+  - お問い合わせ
+navigation_uri: 
+  - http://webbingstudio.com/logicaljp_demo/
+  - >
+    http://webbingstudio.com/logicaljp_demo/service/
+  - >
+    http://webbingstudio.com/logicaljp_demo/service/service_01.html
+  - >
+    http://webbingstudio.com/logicaljp_demo/service/service_02.html
+  - >
+    http://webbingstudio.com/logicaljp_demo/service/service_03.html
+  - >
+    http://webbingstudio.com/logicaljp_demo/outline/
+  - >
+    http://webbingstudio.com/logicaljp_demo/outline/outline01.html
+  - >
+    http://webbingstudio.com/logicaljp_demo/outline/outline02.html
+  - >
+    http://webbingstudio.com/logicaljp_demo/outline/outline03.html
+  - >
+    http://webbingstudio.com/logicaljp_demo/logicaljp/
+  - >
+    http://webbingstudio.com/logicaljp_demo/news/
+  - >
+    http://webbingstudio.com/logicaljp_demo/contact/
+navigation_attr: 
+navigation_parent: 
+  - 0
+  - 0
+  - 2
+  - 2
+  - 2
+  - 0
+  - 6
+  - 6
+  - 6
+  - 0
+  - 0
+  - 0
+navigation_target: 
+  - _self
+  - _self
+  - _self
+  - _self
+  - _self
+  - _self
+  - _self
+  - _self
+  - _self
+  - _self
+  - _self
+  - _self
+navigation_publish: 
+  - on
+  - on
+  - on
+  - on
+  - on
+  - on
+  - on
+  - on
+  - on
+  - on
+  - on
+  - on

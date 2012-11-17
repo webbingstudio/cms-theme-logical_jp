@@ -30,12 +30,12 @@ Copyright 2012 WebbingStudio
 baserCMS  
 http://basercms.net/
 
+a-blogcms  
+http://www.a-blogcms.jp/
+
 
 対応予定CMS
 ------------------------------------
-
-a-blogcms  
-http://www.a-blogcms.jp/
 
 MovableType  
 http://www.sixapart.jp/movabletype/

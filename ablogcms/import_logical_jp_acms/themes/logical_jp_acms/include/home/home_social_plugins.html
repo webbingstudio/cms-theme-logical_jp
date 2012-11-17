@@ -1,0 +1,78 @@
+<!-- BEGIN_MODULE Blog_Field -->
+<!-- BEGIN blogFbPageURL:veil -->
+<section id="fbPage">
+	<h1>%{BLOG_NAME}のFacebookページ</h1>
+
+<script>
+(function(Obj) {
+	var ObjW = Obj.width();
+	document.write('<div class="fb-like-box" data-href="{blogFbPageURL}" data-width="' + ObjW + '" data-height="185" data-show-faces="true" data-border-color="#FFFFFF" data-stream="false" data-header="false"></div>');
+})($('#main #fbPage'));
+</script>
+<!-- /#fbPage --></section>
+<!-- END blogFbPageURL:veil -->
+
+<!-- BEGIN blogTwitterID:veil -->
+<p class="twitterBtn"><a href="https://twitter.com/{blogTwitterID}" target="_blank"><span class="caption">%{BLOG_NAME}のTwitter </span><strong class="twitterID">@{blogTwitterID}</strong></a></p>
+<!-- END blogTwitterID:veil -->
+
+<!-- END_MODULE Blog_Field -->
+
+<div class="social socialW">
+
+<!-- BEGIN_MODULE Blog_Field --><!-- BEGIN blogButtonShow:loop -->
+
+<!-- BEGIN blogButtonShow[1]:touch#1 -->	<div class="twitter">
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="%{BLOG_URL}" data-count="vertical"<!-- BEGIN_MODULE Blog_Field --><!-- BEGIN blogTwitterID:veil --> data-related="{blogTwitterID}"<!-- END blogTwitterID:veil --><!-- END_MODULE Blog_Field --> data-lang="ja">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<!-- /.twitter --></div><!-- END blogButtonShow[1]:touch#1 -->
+
+<!-- BEGIN blogButtonShow[2]:touch#1 -->	<div class="facebook fbLike">
+<div class="fb-like" data-href="%{BLOG_URL}" data-send="true" data-layout="box_count" data-width="450" data-show-faces="false"></div>
+	<!-- /.facebook fbLike --></div><!-- END blogButtonShow[2]:touch#1 -->
+
+<!-- BEGIN blogButtonShow[3]:touch#1 -->	<div class="google">
+<div class="g-plusone" data-size="tall" data-href="%{BLOG_URL}"></div>
+	<!-- /.google --></div><!-- END blogButtonShow[3]:touch#1 -->
+
+<!-- BEGIN blogButtonShow[4]:touch#1 -->	<div class="mixi">
+<div data-plugins-type="mixi-favorite"<!-- BEGIN_MODULE Blog_Field --><!-- BEGIN blogMixiDevKey:veil --> data-service-key="{blogMixiDevKey}"<!-- END blogMixiDevKey:veil --><!-- END_MODULE Blog_Field --> data-size="large" data-href="%{BLOG_URL}" data-show-faces="false" data-show-count="false" data-show-comment="true" data-width=""></div>
+<script type="text/javascript">
+(function(d) {
+	var s = d.createElement('script');
+	s.type = 'text/javascript';
+	s.async = true;s.src = '//static.mixi.jp/js/plugins.js#lang=ja';
+	d.getElementsByTagName('head')[0].appendChild(s);
+})(document);
+</script>
+	<!-- /.mixi --></div>
+<!-- END blogButtonShow[4]:touch#1 -->
+
+<!-- BEGIN blogButtonShow[5]:touch#1 -->	<div class="hatena">
+<a href="http://b.hatena.ne.jp/entry/%{BLOG_URL}" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+	<!-- /.hatena --></div><!-- END blogButtonShow[5]:touch#1 -->
+
+<!-- BEGIN blogButtonShow[6]:touch#1 -->	<div class="weibo">
+<script type="text/javascript" charset="utf-8">
+(function(){
+  var _w = 55 , _h = 66;
+  var param = {
+    url:location.href,
+    type:'1',
+    count:'1',
+    appkey:'',
+    title:'',
+    pic:'',
+    ralateUid:'',
+    language:'zh_cn',
+    rnd:new Date().valueOf()
+  }
+  var temp = [];
+  for( var p in param ){
+    temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
+  }
+  document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
+})()
+</script>
+	<!-- /.weibo --></div><!-- END blogButtonShow[6]:touch#1 -->
+<!-- END blogButtonShow:loop --><!-- END_MODULE Blog_Field -->
+<!-- /.social socialW --></div>

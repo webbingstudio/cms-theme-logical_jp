@@ -1,0 +1,340 @@
+﻿@charset "utf-8";
+
+/*
+=================================================
+
+　                acms EX CSS
+
+systemテーマの「acms.css」を補足しているCSSです
+=================================================
+*/
+
+/* adminBox
+--------------------------------------------- */
+
+#document #adminBox {
+	width: 96%;
+	padding: 1em 2% .5em;
+	font-size: 140%;
+	background: #F3F3F3;
+	border-style: solid;
+	border-color: #C36;
+	border-width: 0 0 2px;
+/*
+	position: fixed;
+	top: 0;
+	left: 0;
+*/
+	z-index: 100;
+}
+
+#document #adminBox input[type='button'],
+#document #adminBox input[type='submit'] {
+	height: 2em;
+	line-height: 2em;
+}
+
+
+	#document #adminBox #loginUserStatus {
+		float: left;
+		display: -moz-inline-box;
+		display: inline-block;
+		height: 2em;
+		line-height: 2em;
+		margin-right: 2em;
+	}
+
+	#document #adminBox .adminBtn {
+		vertical-align: middle;
+	}
+
+		#document #adminBox .adminBtn input {
+			cursor: pointer;
+		}
+
+#document .formEntryAction {
+	background: #F3F3F3;
+	border-style: solid;
+	border-color: #C36;
+	border-width: 1px;
+	font-size: 140%;
+	margin: 2em 0;
+}
+
+	#document .formEntryAction .adminBtn {
+		vertical-align: middle;
+	}
+
+	#document .formEntryAction span.adminBtn {
+		display: -moz-inline-box;
+		display: inline-block;
+		height: 2em;
+		line-height: 2em;
+	}
+
+		#document .formEntryAction .adminBtn input {
+			height: 2em;
+			line-height: 2em;
+			cursor: pointer;
+		}
+
+
+/* clearHidden
+--------------------------------------------- */
+
+#document hr.clearHidden {
+	margin: 0 !important;
+	height: 0 !important;
+	border-top: 0 none !important;
+}
+
+*html body #document hr.clearHidden {/* IE 6 */
+	margin-top: 0 !important;
+}
+
+*:first-child+html #document hr.clearHidden {/* IE 7 */
+	margin-top: 0 !important;
+}
+
+
+/* entryFormColumn
+--------------------------------------------- */
+
+.entryFormColumn .entryFormColumnHead {
+	padding: .9em !important;
+}
+
+#document .adminEntryEdit {
+	clear: both;
+	line-height: 1.1 !important;
+}
+
+#document .adminEntryEdit input[type='button'],
+#document .adminEntryEdit input[type='submit'] {
+	height: 2em;
+	line-height: 2em;
+}
+
+#document .adminEntryEdit select,
+#js-edit_inplace-box select {
+	padding: 2px;
+	font-size: 90%;
+}
+
+#document .adminEntryEdit select {
+	font-size: 90%;
+}
+
+	#document .adminEntryEdit .formEntryActionUnit span.adminBtn {
+		display: -moz-inline-box;
+		display: inline-block;
+		height: 2em;
+		line-height: 2em;
+	}
+
+#js-edit_inplace-box #unitForm .entryFormColumnBody {
+	padding-left: 10px !important;
+}
+
+table.entryFormTable th {
+	padding-top: 1em !important;
+}
+
+.entryFormColumnItem table {
+	margin: 0;
+	border: 0 none;
+}
+.entryFormColumnItem table th,
+.entryFormColumnItem table td {
+	padding: .3em;
+	border: 0 none;
+	vertical-align: middle;
+}
+
+.entryFormColumnItem dl {
+	margin: 0;
+}
+	.entryFormColumnItem dl dt {
+		margin: 0;
+		font-weight: normal;
+	}
+	.entryFormColumnItem dl dd {
+		margin: 0;
+		line-height: 1.3;
+	}
+
+.entryFormColumnItem table td input {
+	width: auto;
+	max-width: 390px;
+}
+
+
+/* column-file
+--------------------------------------------- */
+
+#document .column-file-auto {
+	width: auto !important;
+}
+
+#document .column-file-center {
+	width: 60% !important;
+}
+
+	#document .column-file-auto img {
+		display: -moz-inline-box;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	#document .column-file-center img {
+		float: left;
+	}
+
+	#document .column-file-auto .caption,
+	#document .column-file-left .caption,
+	#document .column-file-right .caption,
+	#document .column-file-center .caption {
+		line-height: 1.286; /* 18px */
+	}
+
+	#document .column-file-auto .caption {
+		margin: 0;
+		display: -moz-inline-box;
+		display: inline-block;
+	}
+
+	#document .column-file-left .caption,
+	#document .column-file-right .caption {
+		margin: .5em 0 0;
+	}
+	#document .column-file-center .caption {
+		margin: 0;
+		padding-top: .5em;
+	}
+
+
+/* column(left)
+--------------------------------------------- */
+
+#document .column-image-left,
+#document .column-file-left,
+#document .column-map-left,
+#document .column-youtube-left,
+#document .column-eximage-left
+ {
+	margin-right: 2em;
+	margin-bottom: 2em;
+	line-height: 1.1;
+}
+#document .column-image-right,
+#document .column-file-right,
+#document .column-map-right,
+#document .column-youtube-right,
+#document .column-eximage-right
+ {
+	margin-left: 2em;
+	margin-bottom: 2em;
+	line-height: 1.1;
+}
+#document .column-image-center,
+#document .column-file-center,
+#document .column-map-center,
+#document .column-youtube-center,
+#document .column-eximage-center
+ {
+	margin-bottom: 2em;
+	line-height: 1.1;
+}
+
+#document .column-map-auto,
+#document .column-youtube-auto
+ {
+	margin-bottom: 2em;
+	line-height: 1.1;
+}
+
+#document .column-map-auto,
+#document .column-map-left,
+#document .column-map-right,
+#document .column-map-center {
+	border-style: solid;
+	border-color: #999;
+	border-width: 1px;
+}
+
+#document .column-image-auto p.caption,
+#document .column-image-left p.caption,
+#document .column-image-center p.caption,
+#document .column-image-right p.caption,
+#document .column-eximage-auto p.caption,
+#document .column-eximage-left p.caption,
+#document .column-eximage-center p.caption,
+#document .column-eximage-right p.caption {
+	margin: 0;
+	padding: .5em;
+	background: #EEE;
+	font-size: 85.7%; /* 12px */
+	line-height: 1.33; /* 16px */
+	text-align: center;
+}
+
+
+/* dialog
+--------------------------------------------- */
+.ui-widget table th {
+	padding: 0 .5em .5em 0;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.ui-widget table td {
+	padding: 0 0 .5em;
+	vertical-align: middle;
+}
+
+
+/* error
+--------------------------------------------- */
+#document p.transaction-notice-error {
+	color: #E02;
+}
+
+#document label.validator-result-error,
+#document label.validator-result-0,
+#document label.v-result-error,
+#document label.v-result-0 {
+	margin: .5em 0 0;
+	padding: .4em .3em .3em;
+	background: #FFE9F3;
+	color: #E02;
+}
+
+
+/* fullbrowser END
+================================================ */
+
+
+/* smartPhone START
+================================================ */
+@media only screen and (max-width: 723px) {
+
+#document [class^='column-'] {
+	display: inline-block;
+	float: none;
+	width: auto !important;
+	height: auto !important;
+	margin: 0 0 2em;
+}
+
+#document [class^='column-'] img {
+	width: auto !important;
+	max-width: 100%;
+	height: auto !important;
+}
+
+
+}
+/* smartPhone END
+================================================ */
+
+

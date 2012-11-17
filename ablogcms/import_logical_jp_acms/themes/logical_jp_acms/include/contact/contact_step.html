@@ -1,0 +1,25 @@
+<div class="mailForm form-step">
+
+	<ul class="mailStep">
+		<li class="current"><strong><span class="num">1</span> お客様情報の入力</strong><span class="icon"></span></li>
+		<li><span class="num">2</span> 送信内容の確認<span class="icon"></span></li>
+		<li><span class="num">3</span> 送信完了</li>
+	</ul>
+
+	<section class="lead">
+		<p>%{BLOG_NAME}へのお問い合わせは、こちらのメールフォームからお願いいたします。</p>
+		<ul>
+			<li><a href="%{BLOG_URL}privacy/">個人情報の取扱いについて</a></li>
+		</ul>
+	<!-- /.lead --></section>
+
+	<form action="?step=reapply" method="post">
+		<input type="hidden" name="id" value="contactForm">
+		<input type="hidden" name="step" value="confirm">
+<!--#include file="/include/contact/contact_input_table.html" -->
+		<div class="submit">
+			<input type="submit" name="ACMS_POST_Form_Confirm" value="送信内容の確認" id="btnConfirm" class="submitBtn">
+		<!-- /.submit --></div>
+	</form>
+
+<!-- /.mailForm form-step --></div>

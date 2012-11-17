@@ -1,0 +1,24 @@
+<!-- BEGIN_MODULE Entry_Headline id="homeHeadline" -->
+<section id="topHeadline" class="section headline">
+	<header class="sectionHeader">
+<!-- BEGIN_MODULE Blog_Field --><!-- BEGIN blogRecentName:veil -->
+		<h1>{blogRecentName}</h1>
+<!-- END blogRecentName:veil --><!-- END_MODULE Blog_Field -->
+		<ul class="headerLink">
+			<li class="rss"><a href="%{BLOG_URL}rss2.xml"><span class="icon"></span>RSS</a></li>
+		</ul>
+	<!-- .sectionHeader --></header>
+	<div class="sectionContents">
+
+<!-- BEGIN entry:loop -->
+<article class="post">
+	<a href="{url}">
+		<p class="date">{date#Y}年{date#m}月{date#d}日</p>
+		<h1>{title}</h1>
+	</a>
+<!-- /.post --></article>
+<!-- END entry:loop -->
+
+	<!-- /.sectionContents --></div>
+<!-- /#topHeadline .section headline --></section>
+<!-- END_MODULE Entry_Headline -->

@@ -1,0 +1,27 @@
+<!-- BEGIN_MODULE Touch_Top -->
+<title>%{BLOG_NAME}</title>
+<meta property="og:title" content="%{BLOG_NAME}">
+<!-- BEGIN_MODULE Blog_Field --><!-- BEGIN blogHomeDesc:veil --><meta name="description" content="{blogHomeDesc}">
+<meta property="og:description" content="{blogHomeDesc}"><!-- END blogHomeDesc:veil -->
+<!-- BEGIN blogHomeKey:veil --><meta name="keywords" content="{blogHomeKey}"><!-- END blogHomeKey:veil --><!-- END_MODULE Blog_Field -->
+<meta property="og:type" content="website">
+<!-- END_MODULE Touch_Top -->
+
+<!-- BEGIN_MODULE Touch_NotTop -->
+<!-- BEGIN_MODULE Touch_Entry -->
+<title>%{ENTRY_TITLE} | %{BLOG_NAME}</title>
+<meta property="og:title" content="%{ENTRY_TITLE}">
+<!-- BEGIN_MODULE Entry_Body --><!-- BEGIN entry:loop -->
+<meta name="description" content="{summary}[escape|trim(200, '...')]">
+<meta property="og:description" content="{summary}[escape|trim(200, '...')]">
+<!-- END entry:loop --><!-- END_MODULE Entry_Body -->
+<!-- END_MODULE Touch_Entry -->
+
+<!-- BEGIN_MODULE Touch_NotEntry -->
+<title><!-- BEGIN_MODULE Touch_Category -->%{CATEGORY_NAME}<!-- END_MODULE Touch_Category --><!-- BEGIN_MODULE Touch_Keyword -->検索結果: %{KEYWORD}<!-- END_MODULE Touch_Keyword --><!-- BEGIN_MODULE Touch_Tag -->タグ: %{TAG}<!-- END_MODULE Touch_Tag --><!-- BEGIN_MODULE Touch_User -->%{USER_NAME}のコンテンツ<!-- END_MODULE Touch_User --> | %{BLOG_NAME}</title>
+<meta property="og:title" content="<!-- BEGIN_MODULE Touch_Category -->%{CATEGORY_NAME}<!-- END_MODULE Touch_Category --><!-- BEGIN_MODULE Touch_Keyword -->検索結果: %{KEYWORD}<!-- END_MODULE Touch_Keyword --><!-- BEGIN_MODULE Touch_Tag -->タグ: %{TAG}<!-- END_MODULE Touch_Tag --><!-- BEGIN_MODULE Touch_User -->%{USER_NAME}のコンテンツ<!-- END_MODULE Touch_User --> | %{BLOG_NAME}">
+
+<!-- BEGIN_MODULE Touch_Category --><meta property="og:description" content="「%{BLOG_NAME}」の、%{CATEGORY_NAME}に関するコンテンツです。"><!-- END_MODULE Touch_Category --><!-- BEGIN_MODULE Touch_Keyword --><meta property="og:description" content="「%{BLOG_NAME}」の、検索結果一覧です。"><!-- END_MODULE Touch_Keyword --><!-- BEGIN_MODULE Touch_Tag --><meta property="og:description" content="「%{BLOG_NAME}」の、タグ「%{TAG}」が付いているコンテンツの一覧です。"><!-- END_MODULE Touch_Tag --><!-- BEGIN_MODULE Touch_User --><meta property="og:description" content="「%{BLOG_NAME}」の、%{USER_NAME}が投稿したコンテンツの一覧です。"><!-- END_MODULE Touch_User -->
+<!-- END_MODULE Touch_NotEntry -->
+<meta property="og:type" content="article">
+<!-- END_MODULE Touch_NotTop -->

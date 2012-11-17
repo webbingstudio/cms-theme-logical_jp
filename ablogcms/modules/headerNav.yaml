@@ -1,0 +1,25 @@
+---
+navigation_label: 
+  - プライバシーポリシー
+  - お問い合わせ
+  - サイトマップ
+navigation_uri: 
+  - >
+    http://webbingstudio.com/logicaljp_demo/privacy/
+  - >
+    http://webbingstudio.com/logicaljp_demo/contact/
+  - >
+    http://webbingstudio.com/logicaljp_demo/sitemap/
+navigation_attr: 
+navigation_parent: 
+  - 0
+  - 0
+  - 0
+navigation_target: 
+  - _self
+  - _self
+  - _self
+navigation_publish: 
+  - on
+  - on
+  - on

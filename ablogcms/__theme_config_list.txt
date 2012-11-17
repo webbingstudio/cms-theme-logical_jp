@@ -1,0 +1,8 @@
+#トップページ,home.html
+#一覧ページ,index.html
+#詳細ページ,entry.html
+#エラーページ(404 Not Found),404.html
+#管理ページ,admin.html
+#エントリー編集ページ,entry.html
+#ユニット追加ページ,entry.html
+#ログインページ,login.html

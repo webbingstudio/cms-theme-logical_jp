@@ -1,0 +1,215 @@
+<p style="margin:2em 0 0; padding: .5em 0 0; font-size: 1.67em; border-top: 2px solid #CCC;">logical_jpテーマ専用設定</p>
+
+<h3>必須の設定</h3>
+<table class="adminTable adminTableY" style="margin-bottom:1em">
+	<tr>
+		<th>トップページのdescription<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogHomeDesc" class="tooltipIcon" /></th>
+		<td>
+			<textarea name="blogHomeDesc" rows="3" cols="40" style="width: 95%;">{blogHomeDesc}</textarea>
+			<input type="hidden" name="field[]" value="blogHomeDesc" />
+		</td>
+	</tr>
+	<tr>
+		<th>トップページのkeywords<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogHomeKey" class="tooltipIcon" /></th>
+		<td>
+			<input type="text" name="blogHomeKey" value="{blogHomeKey}" size="40" style="width: 95%;" />
+			<input type="hidden" name="field[]" value="blogHomeKey" />
+		</td>
+	</tr>
+	<tr>
+		<th>日付＋タイトル新着の見出し<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogRecentName" class="tooltipIcon" /></th>
+		<td>
+			<input type="text" name="blogRecentName" value="{blogRecentName}" size="20" style="width: 40%;" />
+			<input type="hidden" name="field[]" value="blogRecentName" />
+		</td>
+	</tr>
+	<tr>
+		<th>写真＋概要＋タイトル新着の見出し<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogSummaryName" class="tooltipIcon" /></th>
+		<td>
+			<input type="text" name="blogSummaryName" value="{blogSummaryName}" size="20" style="width: 40%;" />
+			<input type="hidden" name="field[]" value="blogSummaryName" />
+		</td>
+	</tr>
+	<tr>
+		<th>Facebookコメント<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogFbComment" class="tooltipIcon" /></th>
+		<td>
+<label for="input-blogFbComment-on"><input type="checkbox" name="blogFbComment[1]" value="1" id="input-blogFbComment-on"{blogFbComment[1]:checked#1} /> Facebookコメントを使用する</label>			<input type="hidden" name="field[]" value="blogFbComment" />
+			<p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">Facebookコメントを選択した場合は、「管理者のFacebookID」も必ず入力してください。コメントの管理は、公式サイトの「<a href="https://developers.facebook.com/tools/comments" target="_blank" style="text-decoration: underline;">コメントモデレーションツール</a>」ページで行います。</p>
+		</td>
+	</tr>
+</table>
+
+
+<h3>SEO・外部サービスに関する設定</h3>
+<table class="adminTable adminTableY" style="margin-bottom:1em">
+	<tr>
+		<th>使用するSNSボタン<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogButtonShow" class="tooltipIcon" /></th>
+		<td>
+
+<label for="input-blogButtonShow-tw"><input type="checkbox" name="blogButtonShow[1]" value="1" id="input-blogButtonShow-tw"{blogButtonShow[1]:checked#1} /> Twitter</label>
+　　<label for="input-blogButtonShow-fbl"><input type="checkbox" name="blogButtonShow[2]" value="1" id="input-blogButtonShow-fbl"{blogButtonShow[2]:checked#1} /> Facebook</label>
+　　<label for="input-blogButtonShow-go"><input type="checkbox" name="blogButtonShow[3]" value="1" id="input-blogButtonShow-go"{blogButtonShow[3]:checked#1} /> Google+</label>
+　　<label for="input-blogButtonShow-mi"><input type="checkbox" name="blogButtonShow[4]" value="1" id="input-blogButtonShow-mi"{blogButtonShow[4]:checked#1} /> mixi</label>
+　　<label for="input-blogButtonShow-ha"><input type="checkbox" name="blogButtonShow[5]" value="1" id="input-blogButtonShow-ha"{blogButtonShow[5]:checked#1} /> はてなブックマーク</label>　　<label for="input-blogButtonShow-we"><input type="checkbox" name="blogButtonShow[6]" value="1" id="input-blogButtonShow-we"{blogButtonShow[6]:checked#1} /> weibo</label>
+			<input type="hidden" name="field[]" value="blogButtonShow" />
+		</td>
+	</tr>
+	<tr>
+		<th>TwitterのID<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogTwitterID" class="tooltipIcon" /></th>
+		<td>
+			<input type="text" name="blogTwitterID" value="{blogTwitterID}" size="20" style="width: 40%;" />
+			<input type="hidden" name="field[]" value="blogTwitterID" />
+		</td>
+	</tr>
+	<tr>
+		<th>mixiの開発者キー<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogMixiDevKey" class="tooltipIcon" /></th>
+		<td>
+			<input type="text" name="blogMixiDevKey" value="{blogMixiDevKey}" size="20" style="width: 40%;" />
+			<input type="hidden" name="field[]" value="blogMixiDevKey" />
+			<p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">mixiのいいね！ボタンを表示させたい場合は、mixiの開発者キーも入力してください。開発者キーを取得するには、<a href="http://developer.mixi.co.jp/about-platform/com/developer/" target="_blank" style="text-decoration: underline;">mixi PlatformにサイトURLを登録する必要があります</a>。</p>
+		</td>
+	</tr>
+	<tr>
+		<th>FacebookページのURL<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogFbPageURL" class="tooltipIcon" /></th>
+		<td>
+			<input type="text" name="blogFbPageURL" value="{blogFbPageURL}" size="40" style="width: 95%;" />
+			<input type="hidden" name="field[]" value="blogFbPageURL" />
+		</td>
+	</tr>
+	<tr>
+		<th>管理者のFacebookID<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogFbAdmins" class="tooltipIcon" /></th>
+		<td>
+			<input type="text" name="blogFbAdmins" value="{blogFbAdmins}" size="40" style="width: 95%;" />
+			<input type="hidden" name="field[]" value="blogFbAdmins" />
+			<p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">Facebookのアクセス解析を利用するためには、入力後、<a href="https://www.facebook.com/insights/" target="_blank" style="text-decoration: underline;">ドメインインサイト</a>への登録が必要です。ブログが非公開になっていると登録できません。<br />複数人登録する場合は、IDを半角カンマで区切って入力してください。</p>
+		</td>
+	</tr>
+	<tr>
+		<th>OGP:Image<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogOgpImage" class="tooltipIcon" /></th>
+		<td>
+			<!-- BEGIN blogOgpImage@path:veil -->
+			<img src="%{ARCHIVES_DIR}{blogOgpImage@path}" />
+			<input type="hidden" name="blogOgpImage@old" value="{blogOgpImage@path}" /><br />
+			<label>
+				<input type="checkbox" name="blogOgpImage@edit" value="delete" />削除
+			</label>
+			<!-- END blogOgpImage@path:veil -->
+			<input type="file" name="blogOgpImage" size="20" />
+			<input type="hidden" name="field[]" value="blogOgpImage" />
+			<input type="hidden" name="blogOgpImage:extension" value="image" />
+			<input type="hidden" name="blogOgpImage@size" value="300" />
+			<input type="hidden" name="blogOgpImage@tinyWidth" value="100" />
+			<input type="hidden" name="blogOgpImage@filename" value="" />
+			<p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">縦横300ピクセル以上の、正方形画像を用意してください。</p>
+		</td>
+	</tr>
+	<tr>
+		<th>アクセス解析サービスのコード<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogAnalytics" class="tooltipIcon" /></th>
+		<td>
+			<textarea name="blogAnalytics" rows="5" cols="40" style="width: 95%;">{blogAnalytics}</textarea>
+			<input type="hidden" name="field[]" value="blogAnalytics" />
+		</td>
+	</tr>
+</table>
+
+
+<h3>カラー・画像の設定</h3>
+
+<table class="adminTable adminTableY">
+	<tr>
+		<th>カラー<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogColor" class="tooltipIcon" /></th>
+		<td>
+			<select name="blogColor">
+<option value="">グレー</option>
+<option value="blue"{blogColor:seleted#blue}>ブルー</option>
+<option value="green"{blogColor:seleted#green}>グリーン</option>
+			</select>
+			<input type="hidden" name="field[]" value="blogColor" />
+		</td>
+	</tr>
+	<tr>
+		<th>ヘッダのロゴ画像<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogHeaderLogo" class="tooltipIcon" /></th>
+		<td>
+			<!-- BEGIN blogHeaderLogo@path:veil -->
+			<img src="%{ARCHIVES_DIR}{blogHeaderLogo@path}" />
+			<input type="hidden" name="blogHeaderLogo@old" value="{blogHeaderLogo@path}" /><br />
+			<label>
+				<input type="checkbox" name="blogHeaderLogo@edit" value="delete" />削除
+			</label>
+			<!-- END blogHeaderLogo@path:veil -->
+			<input type="file" name="blogHeaderLogo" size="20" />
+			<input type="hidden" name="field[]" value="blogHeaderLogo" />
+			<input type="hidden" name="blogHeaderLogo:extension" value="image" />
+			<input type="hidden" name="blogHeaderLogo@height" value="64" />
+			<p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">高さ64ピクセル以上の、正方形に近い画像を用意してください。</p>
+		</td>
+	</tr>
+	<tr>
+		<th>トップページのメイン画像<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogMvGroup" class="tooltipIcon" /></th>
+		<td>
+
+<table class="js-fieldgroup-sortable" style="width: 99%; background: #FFF; border-style: solid; border-width: 1px 1px 0; border-color: #D0D0D0;">
+<!-- BEGIN blogMvGroup:loop -->
+	<tr class="sortable-item">
+		<td class="item-handle" style="background: #EEE; padding: 0;"><img width="17" height="17" class="arrowHandle" src="/images/admin_arrow_vertical.gif" /></td>
+		<td>
+<!-- BEGIN blogMvImage:veil -->
+			<img src="%{ARCHIVES_DIR}{blogMvImage@tinyPath}" style="margin-bottom: .5em;" /><br />
+			<label><input type="checkbox" name="blogMvImage@edit[{i}]" value="delete" /> 画像を削除する</label>
+<!-- END blogMvImage:veil -->
+			<input type="hidden" name="blogMvImage@old[{i}]" value="{blogMvImage@path}" /> 
+			<p><input type="file" name="blogMvImage[{i}]" /></p>
+			<p>代替テキスト: <input type="text" name="blogMvImage@alt[{i}]" value="{blogMvImage@alt}" size="40" /></p>
+			<input type="hidden" name="blogMvImage@width[{i}]" value="960" />
+			<input type="hidden" name="blogMvImage@tinyWidth[{i}]" value="360" />
+
+			<p>リンク先URL: <input type="text" name="blogMvLink[{i}]" value="{blogMvLink}" size="40" /></p>
+			<p><input type="checkbox" name="blogMvBlank[{i}]" value="_blank"{blogMvBlank:checked#_blank} /> 別ウィンドウで表示する</p>
+			<p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">リンクしない場合は、リンク先URLに半角シャープ（#）のみ入力してください。</p>
+		</td>
+		<td><input type="button" class="item-delete" value="削除" /></td>
+	</tr>
+<!-- END blogMvGroup:loop -->
+	<tr class="sortable-item item-template">
+		<td class="item-handle" style="background: #EEE; padding: 0;"><img width="17" height="17" class="arrowHandle" src="/images/admin_arrow_vertical.gif" /></td>
+		<td>
+			<p><input type="file" name="blogMvImage[]" /></p>
+			<p>代替テキスト: <input type="text" name="blogMvImage@alt[]" size="40" /></p>
+			<input type="hidden" name="blogMvImage@width[]" value="960" />
+			<input type="hidden" name="blogMvImage@tinyWidth[]" value="360" />
+
+			<p>リンク先URL: <input type="text" name="blogMvLink[]" value="" size="40" /></p>
+			<p><input type="checkbox" name="blogMvBlank[]" value="_blank" /> 別ウィンドウで表示する</p>
+		</td>
+		<td><input type="button" class="item-delete" value="削除" /></td>
+	</tr>
+	<tfoot>
+	<tr>
+		<td colspan="3"><input type="button" class="item-insert" value="追加" /></td>
+	</tr>
+	</tfoot>
+</table>
+<input type="hidden" name="blogMvImage:extension" value="image" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvImage@tinyPath" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvImage@tinyAlt" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvImage@tinyX" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvImage@tinyY" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvImage@alt" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvImage@path" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvImage@x" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvImage@y" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvImage@edit" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvImage@old" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvLink" />
+<input type="hidden" name="@blogMvGroup[]" value="blogMvBlank" />
+<input type="hidden" name="field[]" value="blogMvImage" />
+<input type="hidden" name="field[]" value="blogMvLink" />
+<input type="hidden" name="field[]" value="blogMvBlank" />
+<input type="hidden" name="field[]" value="@blogMvGroup" />
+
+		</td>
+	</tr>
+</table>
+
+
+
