@@ -1,7 +1,7 @@
 Theme "logical_jp" for a-blog cms
 ====================================
 
-version 1.0
+version 1.01
 
 Author: Seiko Kuchida  
 mail[at]webbingstudio.com  
@@ -56,6 +56,7 @@ a-blog cms 1.5.1以上
 更新履歴
 ------------------------------------
 
+1.01 2012.11.21 配色にグリーン・ブラウンを追加
 1.0  2012.11.01 公開
 
 

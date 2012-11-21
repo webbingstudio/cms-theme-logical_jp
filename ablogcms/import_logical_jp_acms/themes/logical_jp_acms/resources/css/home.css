@@ -581,20 +581,20 @@
 	height: auto !important;
 }
 
-#main #pickup .post a .figure h1 {
-	font-size: 160%;
-	width: 90%;
-	padding: .5em 5%;
-}
+	#main #pickup .post a .figure h1 {
+		position: static;
+		width: auto;
+		font-size: 160%;
+		padding: .5em;
+	}
 
-#main #pickup .post a .figure img {
-	position: static !important;
-	width: 100%;
-	height: auto;
-}
+		#main #pickup .post .figure img {
+			position: static !important;
+			width: 100% !important;
+			height: auto !important;
+		}
 
 #main #pickup .post a .postContents p.summary {
-	font-size: 140%;
 }
 
 #main #topSummary .sectionHeader {
