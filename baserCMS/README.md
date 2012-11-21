@@ -1,7 +1,7 @@
 Theme "logical_jp" for baserCMS
 ====================================
 
-version 1.1
+version 1.11
 
 Author: Seiko Kuchida  
 mail[at]webbingstudio.com  
@@ -38,6 +38,7 @@ baserCMS 2.0.4以上
 更新履歴
 ------------------------------------
 
+1.11 2012.11.21 配色にブラウンを追加  
 1.1  2012.11.10 配色にグリーンを追加、mixiいいね！ボタンに対応  
 1.0  2012.11.01 公開
 
