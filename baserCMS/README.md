@@ -34,12 +34,18 @@ baserCMS 2.0.4以上
 4. 管理画面「テーマ管理」からテーマを適用する
 5. 管理画面「固定ページ一覧」の「固定ページテンプレート読込」を選択して、テーマ内のサンプルページを読み込む
 
+###バージョン2.0.6以降の仕様変更について
+
+上記手順5.で、初期データの読み込み方法が変更となり、/config/data/ 以下のインポート用初期データを参照するようになります。  
+データのみ対応済みですが、次期バージョンにつき、実際の動作は未検証です。
+
 
 更新履歴
 ------------------------------------
 
-1.12 2012.12.09 Twitterツイートボタンの仕様変更に伴う調整
+1.12 2012.12.09 Twitterツイートボタンの仕様変更に伴う調整  
                 /config/data/ 以下にインポート用初期データを移行  
+                logical_index.php を index.php に変更
 1.11 2012.11.21 配色にブラウンを追加  
 1.10 2012.11.10 配色にグリーンを追加、mixiいいね！ボタンに対応  
 1.00 2012.11.01 公開
@@ -50,9 +56,18 @@ baserCMS 2.0.4以上
 
 baserCMSのライセンス規定に準じ、MITライセンスで提供します。  
 個人・商用ともご自由にお使いください。  
-http://basercms.net/about/license  
-http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license
+
+- http://basercms.net/about/license
+- http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license
 
 今後、このテーマに関する解説資料や、拡張を有償で提供する可能性があります。これらに関しては、上記ライセンスの限りではありません。  
+
+本文中の画像拡大効果に、jQueryプラグイン「colorbox」を利用しています。  
+colorboxプラグインは、MITライセンスで提供されています。  
+詳しくは、配布元の下記コンテンツを参照ください。  
+
+- http://www.jacklmoore.com/colorbox
+- https://github.com/jackmoore/colorbox
+
 
 以上
