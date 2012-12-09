@@ -1,8 +1,10 @@
 <!-- BaserPageTagBegin -->
 <?php $bcBaser->setTitle('使用できるページ装飾一覧') ?>
 <?php $bcBaser->setDescription('「logical_jp」テーマで使用できる、HTMLタグのページ装飾のサンプルです。') ?>
-<?php $bcBaser->setPageEditLink(20) ?>
+<?php $bcBaser->setPageEditLink(55) ?>
 <!-- BaserPageTagEnd -->
+
+
 <h2>
 	h2要素</h2>
 <p>

@@ -1,8 +1,10 @@
 <!-- BaserPageTagBegin -->
 <?php $bcBaser->setTitle('サイトマップ') ?>
 <?php $bcBaser->setDescription('baserCMS inc.のサイトマップページ') ?>
-<?php $bcBaser->setPageEditLink(4) ?>
+<?php $bcBaser->setPageEditLink(57) ?>
 <!-- BaserPageTagEnd -->
+
+
 <?php $bcBaser->sitemap() ?>
 <ul class="section">
 	<li>

@@ -1,8 +1,10 @@
 <!-- BaserPageTagBegin -->
 <?php $bcBaser->setTitle('ポイント１：日本のウェブサイトに最適化') ?>
 <?php $bcBaser->setDescription('logical_jpテーマのポイントのご紹介です。') ?>
-<?php $bcBaser->setPageEditLink(17) ?>
+<?php $bcBaser->setPageEditLink(59) ?>
 <!-- BaserPageTagEnd -->
+
+
 <h2>
 	文字組</h2>
 <p>

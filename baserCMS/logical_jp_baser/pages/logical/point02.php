@@ -1,8 +1,10 @@
 <!-- BaserPageTagBegin -->
 <?php $bcBaser->setTitle('ポイント２：ソーシャルメディア対応') ?>
 <?php $bcBaser->setDescription('logical_jpテーマは、日本でよく利用されているソーシャルネットワーキングサービスに対応しています。') ?>
-<?php $bcBaser->setPageEditLink(18) ?>
+<?php $bcBaser->setPageEditLink(60) ?>
 <!-- BaserPageTagEnd -->
+
+
 <h2>
 	ソーシャルプラグイン</h2>
 <p>
@@ -14,25 +16,25 @@
 	シェアボタン</h3>
 <ul>
 	<li>
-		Twitter: ツイート</li>
+		Twitter</li>
 	<li>
-		Facebook: いいね！</li>
+		Facebook</li>
 	<li>
-		Google: +1</li>
+		Google+</li>
 	<li>
-		mixi: イイネ！</li>
+		はてなブックマーク</li>
 	<li>
-		はてなブックマーク: ブックマークする</li>
-	<li>
-		weibo: 投稿する</li>
+		weibo</li>
 </ul>
+<p>
+	※mixiのいいね！ボタンは今後対応予定です。</p>
 <h3>
 	その他</h3>
 <ul>
 	<li>
-		Facebook: コメント</li>
+		Facebookコメント</li>
 	<li>
-		Facebook: Facebookページ紹介枠</li>
+		Facebookページ紹介枠</li>
 </ul>
 <h2>
 	OGP(Open Graph Protocol)</h2>

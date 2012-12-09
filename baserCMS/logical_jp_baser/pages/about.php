@@ -1,8 +1,10 @@
 <!-- BaserPageTagBegin -->
 <?php $bcBaser->setTitle('会社案内') ?>
 <?php $bcBaser->setDescription('baserCMS inc.の会社案内ページ') ?>
-<?php $bcBaser->setPageEditLink(2) ?>
+<?php $bcBaser->setPageEditLink(54) ?>
 <!-- BaserPageTagEnd -->
+
+
 <h2 class="contents-head">
 	会社データ</h2>
 <div class="section">

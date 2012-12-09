@@ -1,8 +1,10 @@
 <!-- BaserPageTagBegin -->
 <?php $bcBaser->setTitle('logical_jpについて') ?>
 <?php $bcBaser->setDescription('日本の小・中規模のコーポレートサイト向けのテーマ「logical_jp」のご紹介です。') ?>
-<?php $bcBaser->setPageEditLink(16) ?>
+<?php $bcBaser->setPageEditLink(58) ?>
 <!-- BaserPageTagEnd -->
+
+
 <p>
 	「logical_jp」は、日本の小・中規模のコーポレートサイトに最も適したデザイン・構成になるよう制作したテーマです。</p>
 <p>

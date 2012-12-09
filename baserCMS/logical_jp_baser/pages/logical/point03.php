@@ -1,8 +1,10 @@
 <!-- BaserPageTagBegin -->
 <?php $bcBaser->setTitle('ポイント３：スマートフォン・タブレットでも快適') ?>
 <?php $bcBaser->setDescription('logical_jpは、アクセス時の画面サイズでレイアウトを変更する、レスポンシブレイアウトを採用しています。') ?>
-<?php $bcBaser->setPageEditLink(19) ?>
+<?php $bcBaser->setPageEditLink(61) ?>
 <!-- BaserPageTagEnd -->
+
+
 <p>
 	logical_jpは、アクセス時の画面サイズでレイアウトを変更する、レスポンシブレイアウトを採用しています。</p>
 <p>

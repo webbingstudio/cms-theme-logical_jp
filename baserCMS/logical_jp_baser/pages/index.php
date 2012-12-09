@@ -1,11 +1,12 @@
 <!-- BaserPageTagBegin -->
 <?php $bcBaser->setTitle('logical_jp専用トップページ') ?>
 <?php $bcBaser->setDescription('logical_jp専用トップページの説明文です') ?>
-<?php $bcBaser->setPageEditLink(15) ?>
+<?php $bcBaser->setPageEditLink(56) ?>
 <!-- BaserPageTagEnd -->
+
 <div style="border: 2px solid #D02; margin: 0 0 1em; padding: 1.6em; line-height: 1.5; font-size: 14px;">
 	これは「logical_jp」専用のトップページです。 特定のページへのピックアップを表示できます。<br />
-	利用する場合は、現在のトップページ（<strong>ページ名がindexになっているページ</strong>）と、このページを入れ替えてください。</div>
+	公開前に、任意の内容に修正してください。</div>
 <section class="section" id="pickup">
 	<article class="post">
 		<div class="figure">
