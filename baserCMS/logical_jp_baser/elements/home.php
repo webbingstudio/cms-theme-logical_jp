@@ -38,25 +38,10 @@
 
 	<div id="contents02" class="contents">
 
-<section id="topHeadline" class="section headline">
-	<header class="sectionHeader">
-
-		<h1>新着情報</h1>
-
-		<ul class="headerLink">
-			<li class="rss"><a href="/news/index.rss"><span class="icon"></span>RSS</a></li>
-		</ul>
-	<!-- .sectionHeader --></header>
-	<div class="sectionContents">
-
 <?php
-global $wsLogPosts;
-$wsLogPosts = 'headline';
 $bcBaser->blogPosts('news', 5);
+$bcBaser->js('/feed/ajax/1');
 ?>
-
-	<!-- /.sectionContents --></div>
-<!-- /#topHeadline .section headline --></section>
 
 	<!--/#contents02 .contents --></div>
 
@@ -144,7 +129,7 @@ if($wsLogSnsBtn['mixi'] == 1): ?>
 	<!-- /.weibo --></div>
 
 <?php endif ?>
-
+
 <!-- /.social socialW --></div>
 
 	<!--/#contents03 .contents --></div>

@@ -1,7 +1,7 @@
 Theme "logical_jp" for baserCMS
 ====================================
 
-version 1.12
+version 1.13
 
 Author: Seiko Kuchida  
 mail[at]webbingstudio.com  
@@ -43,6 +43,8 @@ baserCMS 2.0.4以上
 更新履歴
 ------------------------------------
 
+1.13 2012.12.09 メインビジュアルのスライドショーを追加  
+                フィードリーダープラグインに対応（トップページ右カラム・設定No.1を呼び出す）  
 1.12 2012.12.09 Twitterツイートボタンの仕様変更に伴う調整  
                 /config/data/ 以下にインポート用初期データを移行  
                 logical_index.php を index.php に変更

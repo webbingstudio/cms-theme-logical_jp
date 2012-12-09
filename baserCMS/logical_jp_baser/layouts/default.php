@@ -14,7 +14,11 @@
 
 <div id="document">
 <?php $bcBaser->header() ?>
-<nav id="globalNav" role="navigation"><?php $bcBaser->element('global_menu') ?>
+<?php if($bcBaser->isHome()): ?>
+<?php $bcBaser->element('home_mainvisual') ?>
+<?php endif ?>
+<nav id="globalNav" role="navigation">
+<?php $bcBaser->element('global_menu') ?>
 <!--/#globalNav --></nav>
 	<div id="wrapper">
 		<div id="main" role="main">
@@ -48,7 +52,7 @@
 <?php $bcBaser->element('social_plugin', array('size' => 'L')) ?>
 	<!--/.articleFooter --></footer>
 
-<!--/.article --></article>
+<!--/.article --></article>
 
 <?php else: ?>
 
@@ -67,7 +71,8 @@
 <?php $bcBaser->element('sidebar') ?>
 <?php endif ?>
 
-	<!--/#wrapper --></div><?php $bcBaser->footer() ?>
+	<!--/#wrapper --></div>
+<?php $bcBaser->footer() ?>
 
 <!--/#document --></div>
 <?php $bcBaser->func() ?>

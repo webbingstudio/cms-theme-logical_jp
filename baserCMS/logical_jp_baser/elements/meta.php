@@ -55,7 +55,12 @@ if(!empty($wsLogColor)) {
 	$bcBaser->css(array('color_' . $wsLogColor));
 }
 ?>
-<?php $bcBaser->js(array('jquery', 'common')) ?>
+<?php
+$bcBaser->js(array('jquery', 'common'));
+if($bcBaser->isHome()) {
+	$bcBaser->js(array('home', 'jquery.easing', 'jquery.ws_slidemenu'));
+}
+?>
 
 <?php $bcBaser->icon() ?>
 
@@ -69,7 +74,8 @@ if(!empty($wsLogColor)) {
     po.src = 'https://apis.google.com/js/plusone.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
-</script><?php endif ?>
+</script>
+<?php endif ?>
 
 <?php if(!$bcBaser->isHome()): ?>
 <?php

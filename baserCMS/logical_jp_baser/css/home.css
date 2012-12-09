@@ -13,7 +13,7 @@
 /* sprites
 --------------------------------------------- */
 
-#mainVisual .mvNav,
+#mainVisual .mvNav .icon,
 #main #fbPage h1,
 #main .twitterBtn a
 {
@@ -27,20 +27,18 @@
 
 #mainVisual {
 	position: relative;
-	width: 960px;
-	margin: 0 auto 1.6em;
-	padding: 15px 0 20px;
+	padding: 1.6em 0 3.2em;
 }
 
 	#mainVisual #mvContainer {
 		overflow: hidden;
 		position: relative;
-		width: 880px;
+		width: 960px;
 		height: 240px;
+		margin: 0 auto;
 		border-style: solid;
 		border-color: #FFF;
-		border-width: 2px;
-		margin: 0 auto;
+		border-width: 3px;
 		-webkit-box-shadow: 2px 3px 20px rgba(0,0,0,.3);
 		-moz-box-shadow: 2px 3px 20px rgba(0,0,0,.3);
 		-ms-box-shadow: 2px 3px 20px rgba(0,0,0,.3);
@@ -51,11 +49,10 @@
 	#mainVisual .mvSlide {
 		position: absolute;
 		overflow: hidden;
-		width: 880px;
+		width: 960px;
 		height: 240px;
 		top: 0;
-		left: 0;
-		cursor: pointer;
+		left: -960px;
 		z-index: 101;
 	}
 
@@ -67,29 +64,47 @@
 		left: 50%;
 		background: url(../images/base/loading_ico.gif) no-repeat 50% 50%;
 		margin: -24px 0 0 -24px;
-		z-index: 102;
+		z-index: 120;
 	}
 
 	#mainVisual .mvNav {
 		position: absolute;
+		width: 48px;
+		height: 240px;
+		top: 0;
+		opacity: .5;
+		cursor: pointer;
+	}
+
+	#mainVisual .mvNav .icon {
+		position: absolute;
+		overflow: hidden;
 		width: 38px;
 		height: 50px;
 		top: 50%;
+		left: 5px;
 		margin-top: -25px;
-		cursor: pointer;
+		text-indent: -999px;
+		opacity: 1;
 	}
 
 	#mainVisual #mvPrev {
 		left: 0;
-		background-position: 0 -100px;
-		z-index: 103;
+		z-index: 122;
 	}
+
+		#mainVisual #mvPrev .icon {
+			background-position: 0 -100px;
+		}
 
 	#mainVisual #mvNext {
 		right: 0;
-		background-position: -190px -100px;
-		z-index: 104;
+		z-index: 123;
 	}
+
+		#mainVisual #mvNext .icon {
+			background-position: -190px -100px;
+		}
 
 
 /* contents
@@ -341,7 +356,25 @@
 		background-color: transparent;
 	}
 
-	#main .section .sectionHeader h1 {
+	#main #topHeadline .sectionHeader h1 {
+		margin-top: .4em;
+		font-size: 180%;
+	}
+
+
+/* topFeed
+--------------------------------------------- */
+
+#main #topFeed {
+}
+
+	#main #topFeed .sectionHeader {
+		margin-bottom: 0;
+		padding: .8em 0;
+		background-color: transparent;
+	}
+
+	#main #topFeed .sectionHeader h1 {
 		margin-top: .4em;
 		font-size: 180%;
 	}
@@ -488,7 +521,8 @@
 /* tablet START
 ================================================ */
 @media only screen and (min-width: 704px) and (max-width: 970px) {
-
+
+
 #wrapper #main {
 	padding-bottom: 0;
 }
@@ -503,14 +537,8 @@
 	}
 
 	#mainVisual .mvSlide {
-		display: none;
-		position: static;
 		width: 100%;
 		height: 100%;
-	}
-
-	#mainVisual .mvSlide:first-child {
-		display: block;
 	}
 
 		#mainVisual .mvSlide img {
@@ -532,12 +560,16 @@
 
 	#document #main #contentsWrapper #contents02 #topHeadline {
 		float: left;
-		width: 448px;
+		width: 48.40425531914894%;
 	}
 
-	#document #main #contentsWrapper #contents02 .banner {
+	#document #main #contentsWrapper #contents02 #topFeed {
 		float: right;
-		width: 224px;
+		width: 48.40425531914894%;
+	}
+
+	#document #main #contentsWrapper #contents02 #topFeed .sectionHeader {
+		padding-bottom: 1.1em;
 	}
 
 #document #main #contentsWrapper #contents03 {
@@ -550,7 +582,8 @@
 	width: auto;
 }
 
-}
+
+}
 /* tablet END
 ================================================ */
 
@@ -558,6 +591,10 @@
 /* smartPhone START
 ================================================ */
 @media only screen and (max-width: 723px) {
+
+#wrapper {
+	padding-bottom: 0;
+}
 
 #wrapper #main {
 	padding-bottom: 0;
@@ -572,25 +609,21 @@
 	#mainVisual #mvContainer {
 		width: 100%;
 		height: auto;
-		border: 0 none;
-		padding: 0;
-		box-shadow: none;
+		border-width: 3px 0 0;
 	}
 
 	#mainVisual .mvSlide {
-		display: none;
-		position: static;
 		width: 100%;
 		height: 100%;
-	}
-
-	#mainVisual .mvSlide:first-child {
-		display: block;
 	}
 
 		#mainVisual .mvSlide img {
 			width: 100%;
 			height: auto;
+		}
+
+		#mainVisual .mvNav {
+			display: none;
 		}
 
 #document #main #contentsWrapper #contents01 {
@@ -608,6 +641,10 @@
 #document #main #contentsWrapper #contents03 {
 	width: auto;
 	margin: 0;
+}
+
+#wrapper #main .section .sectionHeader {
+	padding: 1em;
 }
 
 #main #pickup .post a {
@@ -702,7 +739,9 @@
 }
 
 	#main .contents #fbPage h1 {
-		height: auto;
+		height: auto !important; /* for Modern Browser */
+		height: 40px; /* for IE */
+		min-height: 40px; /* for Modern Browser */
 		line-height: 1.22; /* 22px */
 		padding-left: 50px;
 		font-size: 180%;
