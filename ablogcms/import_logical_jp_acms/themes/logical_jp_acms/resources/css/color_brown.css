@@ -1,17 +1,12 @@
 ﻿@charset "utf-8";
-
-/*
-=================================================
-
-　               color_brown CSS
-
-配色に関するCSSです
-=================================================
-*/
+/*!
+ * color_brown CSS
+ * ---------------------------------------------
+ * 配色に関するCSSです
+ */
 
 
-/* text-color
---------------------------------------------- */
+/* text-color */
 
 a,
 .freetxt h4,
@@ -22,8 +17,7 @@ a:visited
 { color: #777; }
 
 
-/* background-color
---------------------------------------------- */
+/* background-color */
 
 #main .headline .post a:hover,
 #main .headline .post a:focus,
@@ -77,8 +71,8 @@ a:visited
 { background: transparent; }
 
 
-/* border-color
---------------------------------------------- */
+/* border-color */
+
 #footer,
 #main .article .articleHeader,
 #main .section .sectionHeader,
@@ -125,8 +119,7 @@ a:visited
 }
 
 
-/* icons
---------------------------------------------- */
+/* icons */
 
 #main .posts .post .postContents p.moreLink a,
 #main .summary .post a .postContents p.moreLink b,
@@ -149,8 +142,8 @@ a:visited
 { background-image: url(../images/base/bullet_01_brown.png); }
 
 
-/* globalNav
---------------------------------------------- */
+/* globalNav */
+
 #globalNav {
 	background: #6A441E;
 	border-style: solid;
@@ -219,8 +212,8 @@ a:visited
 }
 
 
-/* searchBox
---------------------------------------------- */
+/* searchBox */
+
 #header #searchBox {
 	background-color: #F5F4ED;
 	border-color: #B8B5B0;
@@ -235,8 +228,7 @@ a:visited
 }
 
 
-/* contactBnr
-------------------------------------------------- */
+/* contactBnr */
 
 .contactBnr a {
 	border-color: #B8B5B0;
@@ -260,8 +252,11 @@ a:visited
 	}
 
 
-/* smartPhone START
-================================================ */
+/*!
+ * smart phone START
+ * ---------------------------------------------
+ */
+
 @media only screen and (max-width: 723px) {
 
 #main #entryRelational .sectionContents ul li a
@@ -277,6 +272,9 @@ a:visited
 { border-color: #B8B5B0; }
 
 }
-/* smartPhone END
-================================================ */
+
+/*!
+ * smartphone END
+ * ---------------------------------------------
+ */
 
