@@ -1,17 +1,11 @@
 ﻿@charset "utf-8";
+/*!
+ * color_blue CSS
+ * ---------------------------------------------
+ * 配色に関するCSSです
+ */
 
-/*
-=================================================
-
-　               color_blue CSS
-
-配色に関するCSSです
-=================================================
-*/
-
-
-/* text-color
---------------------------------------------- */
+/* text-color */
 
 a,
 .freetxt h4,
@@ -22,17 +16,16 @@ a:visited
 { color: #777; }
 
 
-/* background-color
---------------------------------------------- */
+/* background-color */
 
 #footer,
 .freetxt table thead th,
 #main #BlogComment #BlogCommentList .comment
 { background: #EEECE0; }
 
-	#document #main #BlogComment #BlogCommentList .comment:after {
-		border-color: transparent transparent #EEECE0 transparent;
-	}
+  #document #main #BlogComment #BlogCommentList .comment:after {
+    border-color: transparent transparent #EEECE0 transparent;
+  }
 
 #header #headerNav ul li a:hover,
 #header #headerNav ul li a:focus,
@@ -74,8 +67,8 @@ a:visited
 { background: #FFF; }
 
 
-/* border-color
---------------------------------------------- */
+/* border-color */
+
 #footer,
 #main .categoryHeader,
 #main .article .articleHeader,
@@ -108,12 +101,11 @@ a:visited
 { border-color: #B8B5B0; }
 
 #main #BlogComment #BlogCommentList .comment:after {
-	border-color: transparent transparent #EEECE0 transparent;
+  border-color: transparent transparent #EEECE0 transparent;
 }
 
 
-/* icons
---------------------------------------------- */
+/* icons */
 
 #main .posts .post .postContents p.more a,
 .freetxt a.linkBtn:before,
@@ -133,65 +125,64 @@ a:visited
 { background-image: url(../images/base/bullet_01_blue.png); }
 
 
-/* globalNav
---------------------------------------------- */
+/* globalNav */
+
 #globalNav {
-	background: #185BB0;
-	border-style: solid;
-	border-width: 2px 0;
-	border-color: #1E67BD transparent #0D3F99;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#1352A6), to(#1E67BD));
-	background-image: -webkit-linear-gradient(top, #1352A6, #1E67BD);
-	background-image: -moz-linear-gradient(top, #1352A6, #1E67BD);
-	background-image: -ms-linear-gradient(top, #1352A6, #1E67BD);
-	background-image: -o-linear-gradient(top, #1352A6, #1E67BD);
-	background-image: linear-gradient(top, #1352A6, #1E67BD);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#1352A6, endcolorstr=#1E67BD));
-	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#1352A6, endcolorstr=#1E67BD))";
+  background: #185BB0;
+  border-style: solid;
+  border-width: 2px 0;
+  border-color: #1E67BD transparent #0D3F99;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1352A6), to(#1E67BD));
+  background-image: -webkit-linear-gradient(top, #1352A6, #1E67BD);
+  background-image: -moz-linear-gradient(top, #1352A6, #1E67BD);
+  background-image: -ms-linear-gradient(top, #1352A6, #1E67BD);
+  background-image: -o-linear-gradient(top, #1352A6, #1E67BD);
+  background-image: linear-gradient(top, #1352A6, #1E67BD);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#1352A6, endcolorstr=#1E67BD));
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#1352A6, endcolorstr=#1E67BD))";
 }
 
 #globalNav ul {
-	border-color: #0D3F99;
+  border-color: #0D3F99;
 }
 
-	#globalNav ul li {
-		float: left;
-	}
+  #globalNav ul li {
+    float: left;
+  }
 
-		#globalNav ul li a {
-			color: #ECF0F0;
-			border-color: #0D3F99;
-			text-shadow: 0 0 .3em rgba(0,32,64,.3);
-		}
+    #globalNav ul li a {
+      color: #ECF0F0;
+      border-color: #0D3F99;
+      text-shadow: 0 0 .3em rgba(0,32,64,.3);
+    }
 
-			#globalNav ul li a:hover,
-			#globalNav ul li a:focus,
-			#globalNav ul li.stay a:link,
-			#globalNav ul li.stay a:visited {
-				background-color: #1B69BC;
-				background-image: -webkit-gradient(linear, left top, left bottom, from(#165EB3), to(#2174C5));
-				background-image: -webkit-linear-gradient(top, #165EB3, #2174C5);
-				background-image: -moz-linear-gradient(top, #165EB3, #2174C5);
-				background-image: -ms-linear-gradient(top, #165EB3, #2174C5);
-				background-image: -o-linear-gradient(top, #165EB3, #2174C5);
-				background-image: linear-gradient(top, #165EB3, #2174C5);
-				filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#165EB3, endcolorstr=#2174C5));
-				-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#165EB3, endcolorstr=#2174C5))";
-			}
+      #globalNav ul li a:hover,
+      #globalNav ul li a:focus,
+      #globalNav ul li.stay a:link,
+      #globalNav ul li.stay a:visited {
+        background-color: #1B69BC;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#165EB3), to(#2174C5));
+        background-image: -webkit-linear-gradient(top, #165EB3, #2174C5);
+        background-image: -moz-linear-gradient(top, #165EB3, #2174C5);
+        background-image: -ms-linear-gradient(top, #165EB3, #2174C5);
+        background-image: -o-linear-gradient(top, #165EB3, #2174C5);
+        background-image: linear-gradient(top, #165EB3, #2174C5);
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#165EB3, endcolorstr=#2174C5));
+        -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#165EB3, endcolorstr=#2174C5))";
+      }
 
 
-/* searchBox
---------------------------------------------- */
-#header #searchBox
-{
-	background-color: #F6F5F0;
-	border-color: #B8B5B0;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#EBE9E2), to(#F6F5EF));
-	background-image: -webkit-linear-gradient(top, #EBE9E2, #F6F5EF);
-	background-image: -moz-linear-gradient(top, #EBE9E2, #F6F5EF);
-	background-image: -ms-linear-gradient(top, #EBE9E2, #F6F5EF);
-	background-image: -o-linear-gradient(top, #EBE9E2, #F6F5EF);
-	background-image: linear-gradient(top, #EBE9E2, #F6F5EF);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#EBE9E2, endcolorstr=#F6F5EF));
-	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#EBE9E2, endcolorstr=#F6F5EF))";
+/* searchBox */
+
+#header #searchBox {
+  background-color: #F6F5F0;
+  border-color: #B8B5B0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EBE9E2), to(#F6F5EF));
+  background-image: -webkit-linear-gradient(top, #EBE9E2, #F6F5EF);
+  background-image: -moz-linear-gradient(top, #EBE9E2, #F6F5EF);
+  background-image: -ms-linear-gradient(top, #EBE9E2, #F6F5EF);
+  background-image: -o-linear-gradient(top, #EBE9E2, #F6F5EF);
+  background-image: linear-gradient(top, #EBE9E2, #F6F5EF);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#EBE9E2, endcolorstr=#F6F5EF));
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#EBE9E2, endcolorstr=#F6F5EF))";
 }
