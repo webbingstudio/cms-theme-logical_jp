@@ -8,7 +8,7 @@
 	<header class="sectionHeader">
 		<h1>新着情報</h1>
 		<ul class="headerLink">
-			<li class="rss"><a href="/news/index.rss"><span class="icon"></span>RSS</a></li>
+			<li class="rss"><a href="<?php $bcBaser->url('/news/index.rss'); ?>"><span class="icon"></span>RSS</a></li>
 		</ul>
 	<!-- .sectionHeader --></header>
 	<div class="sectionContents">

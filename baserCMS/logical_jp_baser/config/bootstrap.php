@@ -25,7 +25,7 @@ $wsLogHomeSummary['posts'][] = array(
 	'title' => '日本のウェブサイトのために',
 	'summary' => '日本の企業サイトで好まれるデザイン、日本語の標準フォントで快適に閲覧できる文字組となるよう制作しました。',
 	'img' => '/images/home/summary_01.jpg',
-	'url' => 'logical/point01',
+	'url' => '/logical/point01',
 );
 
 // 概要２セット目
@@ -33,7 +33,7 @@ $wsLogHomeSummary['posts'][] = array(
 	'title' => 'ソーシャルメディア対応',
 	'summary' => 'Twitter・Facebook・Google+はもちろん、mixi・はてなブックマーク・中国圏のSNS「weibo」にも対応。シェアには欠かせないOGPも実装しています。',
 	'img' => '/images/home/summary_02.jpg',
-	'url' => 'logical/point02',
+	'url' => '/logical/point02',
 );
 
 // 概要３セット目
@@ -41,7 +41,7 @@ $wsLogHomeSummary['posts'][] = array(
 	'title' => 'スマートフォンでも快適',
 	'summary' => 'レスポンシブレイアウトを採用。PC版のテーマのまま、タブレット・スマートフォンにも対応しています。',
 	'img' => '/images/home/summary_03.jpg',
-	'url' => 'logical/point03',
+	'url' => '/logical/point03',
 );
 
 

@@ -19,7 +19,7 @@
 
 <?php foreach ($wsLogHomeSummary['posts'] as $post): ?>
 		<article class="post">
-				<a href="<?php echo $post['url'] ?>">
+				<a href="<?php $bcBaser->url($post['url']); ?>">
 				<figure><?php $bcBaser->img($post['img'], array('alt'=>'','width'=>'224','height'=>'140')) ?></figure>
 				<div class="postContents">
 					<h1><?php echo $post['title']; ?></h1>

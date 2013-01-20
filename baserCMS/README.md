@@ -1,13 +1,13 @@
 Theme "logical_jp" for baserCMS
 ====================================
 
-version 1.14
+version 1.15
 
 Author: Seiko Kuchida  
 mail[at]webbingstudio.com  
 http://webbingstudio.com/
 
-Copyright 2012 WebbingStudio
+Copyright 2013 WebbingStudio
 
 - - - - - - - - - - - - - - - - - - -
 
@@ -43,6 +43,7 @@ baserCMS 2.0.4以上
 更新履歴
 ------------------------------------
 
+1.15 2012.01.21 「スマートURL」がオフでも画像のリンクが切れないよう修正  
 1.14 2012.01.14 コーディングルールの見直し  
                 CSS見出しの体裁を変更  
                 インデントをタブからスペース2個に変更  
