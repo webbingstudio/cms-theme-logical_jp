@@ -392,7 +392,11 @@
   }
 
   #main .mailForm form table tr td input#MessageEmail1,
-  #main .mailForm form table tr td input#MessageEmail2,
+  #main .mailForm form table tr td input#MessageEmail2 {
+    width: 70%;
+    max-width: 350px;
+  }
+
   #main .mailForm form table tr td input#MessageAddress2,
   #main .mailForm form table tr td input#MessageAddress3,
   #main .mailForm form table tr td textarea#MessageMessage,
