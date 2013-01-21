@@ -5,7 +5,7 @@ Author: Seiko Kuchida
 mail[at]webbingstudio.com  
 http://webbingstudio.com/
 
-Copyright 2012 WebbingStudio
+Copyright 2013 WebbingStudio
 
 - - - - - - - - - - - - - - - - - - -
 
@@ -21,7 +21,8 @@ Copyright 2012 WebbingStudio
 http://webbingstudio.com/logicaljp_demo/
 
 ###サポートサイト
-準備中です...
+
+http://webbingstudio.com/logicaljp/
 
 レポジトリ構成について
 ------------------------------------

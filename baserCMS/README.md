@@ -28,6 +28,8 @@ baserCMS 2.0.4以上
 インストール方法
 ------------------------------------
 
+http://webbingstudio.com/logicaljp/install/install_basercms.html
+
 1. ファイルを解凍する
 2. **「logical_jp_baser/config/bootstrap.php」**の各種設定を編集する（クォーテーションの書き忘れ等に注意してください）
 3. 「logical_jp_baser」フォルダ以下を、baserCMSのテーマディレクトリにアップロードする

@@ -7,7 +7,7 @@ Author: Seiko Kuchida
 mail[at]webbingstudio.com  
 http://webbingstudio.com/
 
-Copyright 2012 WebbingStudio
+Copyright 2013 WebbingStudio
 
 - - - - - - - - - - - - - - - - - - -
 
