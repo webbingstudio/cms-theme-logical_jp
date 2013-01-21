@@ -305,6 +305,8 @@
   line-height: 1.286; /* 18px */
   border-right: 1px solid #999;
   border-bottom: 1px solid #999;
+  text-align: left;
+  vertical-align: middle;
 }
 
   .freetxt table thead th {
