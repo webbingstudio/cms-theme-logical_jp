@@ -13,27 +13,30 @@
 <!--#include file="/include/common/topic_path.html" -->
 <!--#include file="/include/index/index_category_header.html" -->
 <!--#include file="/include/index/index_recent_summary.html" -->
-<!-- END_MODULE Touch_Category -->
+
+<!-- END_MODULE Touch_Category -->
 <!-- BEGIN_MODULE Touch_Tag -->
 <nav class="topicPath">
-	<p><a href="%{BLOG_URL}" class="home">ƒz[ƒ€</a><span class="sep"> &gt; </span>ƒ^ƒO: %{TAG}</p>
+	<p><a href="%{BLOG_URL}" class="home">ãƒ›ãƒ¼ãƒ </a><span class="sep"> &gt; </span>ã‚¿ã‚°: <!-- BEGIN_MODULE Tag_Filter --><!-- BEGIN tagBox --><!-- BEGIN selected:loop -->{name}<!-- BEGIN glue --><span class="sep"> &gt; </span><!-- END glue --><!-- END selected:loop --><!-- END tagBox --><!-- END_MODULE Tag_Filter --></p>
 <!-- /.topicPath --></nav>
 
 <div class="categoryHeader categoryNoImage">
-	<h1 class="categoryTitle">ƒ^ƒO: %{TAG}</h1>
+	<h1 class="categoryTitle">ã‚¿ã‚°: <!-- BEGIN_MODULE Tag_Filter --><!-- BEGIN tagBox --><!-- BEGIN selected:loop -->{name}<!-- BEGIN glue --><span class="sep"> &gt; </span><!-- END glue --><!-- END selected:loop --><!-- END tagBox --><!-- END_MODULE Tag_Filter --></h1>
 <!-- /.categoryHeader --></div>
 <!--#include file="/include/index/index_recent_search.html" -->
-<!-- END_MODULE Touch_Tag -->
+
+<!-- END_MODULE Touch_Tag -->
 <!-- BEGIN_MODULE Touch_User -->
 <nav class="topicPath">
-	<p><a href="%{BLOG_URL}" class="home">ƒz[ƒ€</a><span class="sep"> &gt; </span>%{USER_NAME}‚ÌƒRƒ“ƒeƒ“ƒc</p>
+	<p><a href="%{BLOG_URL}" class="home">ãƒ›ãƒ¼ãƒ </a><span class="sep"> &gt; </span>%{USER_NAME}ã®ã‚³ãƒ³ãƒ†ãƒ³ãƒ„</p>
 <!-- /.topicPath --></nav>
 
 <div class="categoryHeader categoryNoImage">
-	<h1 class="categoryTitle">%{USER_NAME}‚ÌƒRƒ“ƒeƒ“ƒc</h1>
+	<h1 class="categoryTitle">%{USER_NAME}ã®ã‚³ãƒ³ãƒ†ãƒ³ãƒ„</h1>
 <!-- /.categoryHeader --></div>
 <!--#include file="/include/index/index_recent_search.html" -->
-<!-- END_MODULE Touch_User -->
+
+<!-- END_MODULE Touch_User -->
 
 		<!--/#main --></div>
 <!-- BEGIN_MODULE Touch_Category -->
