@@ -1,63 +1,63 @@
 <div class="mailForm form-confirm">
 
-	<ul class="mailStep">
-		<li><span class="num">1</span> お客様情報の入力<span class="icon"></span></li>
-		<li class="current"><strong><span class="num">2</span> 送信内容の確認</strong><span class="icon"></span></li>
-		<li><span class="num">3</span> 送信完了</li>
-	</ul>
+  <ul class="mailStep">
+    <li><span class="num">1</span> お客様情報の入力<span class="icon"></span></li>
+    <li class="current"><strong><span class="num">2</span> 送信内容の確認</strong><span class="icon"></span></li>
+    <li><span class="num">3</span> 送信完了</li>
+  </ul>
 
-	<section class="lead">
-		<p>以下の内容で送信します。よろしければ「送信する」ボタンを押してください。</p>
-	<!-- /.lead --></section>
+  <section class="lead">
+    <p>以下の内容で送信します。よろしければ「送信する」ボタンを押してください。</p>
+  <!-- /.lead --></section>
 
-	<table class="ablogcmsForm">
-		<tr>
-			<th>氏名</th>
-			<td>{fname} {lname}</td>
-		</tr>
-		<tr>
-			<th>会社・団体名</th>
-			<td>{company}</td>
-		</tr>
-		<tr>
-			<th>メールアドレス</th>
-			<td>{email}</td>
-		</tr>
-		<tr>
-			<th>電話番号</th>
-			<td>{phone}</td>
-		</tr>
-		<tr>
-			<th>住所</th>
-			<td>〒{zip}　{pref_code}{address}</td>
-		</tr>
-		<tr>
-			<th>お問い合せ種類</th>
-			<td>{description}</td>
-		</tr>
-		<tr>
-			<th>お問い合せ内容</th>
-			<td>{inquiry}</td>
-		</tr>
-	</table>
+  <table class="ablogcmsForm">
+    <tr>
+      <th>氏名</th>
+      <td>{fname} {lname}</td>
+    </tr>
+    <tr>
+      <th>会社・団体名</th>
+      <td>{company}</td>
+    </tr>
+    <tr>
+      <th>メールアドレス</th>
+      <td>{email}</td>
+    </tr>
+    <tr>
+      <th>電話番号</th>
+      <td>{phone}</td>
+    </tr>
+    <tr>
+      <th>住所</th>
+      <td>〒{zip}　{pref_code}{address}</td>
+    </tr>
+    <tr>
+      <th>お問い合せ種類</th>
+      <td>{description}</td>
+    </tr>
+    <tr>
+      <th>お問い合せ内容</th>
+      <td>{inquiry}</td>
+    </tr>
+  </table>
 
-	<div class="submit">
-		<form action="?step=reapply" method="post">
-			<input type="hidden" name="id" value="contactForm">
-			<input type="hidden" name="step" value="reapply">
-			<input type="hidden" name="takeover" value="{takeover}">
-			<input type="submit" name="ACMS_POST_Form_Chain" value="入力画面へ戻る" id="btnToInput" class="subitBtn">
-		</form>
+  <div class="submit">
+    <form action="?step=reapply" method="post">
+      <input type="hidden" name="id" value="contactForm">
+      <input type="hidden" name="step" value="reapply">
+      <input type="hidden" name="takeover" value="{takeover}">
+      <input type="submit" name="ACMS_POST_Form_Chain" value="入力画面へ戻る" id="btnToInput" class="subitBtn">
+    </form>
 
-		<form action="" method="post">
-			<input type="hidden" name="id" value="contactForm">
-			<input type="hidden" name="To[]" value="{email}">
-			<input type="hidden" name="AdminReply-To[]" value="<{email}>">
-			<input type="hidden" name="AdminFrom[]" value="<{email}>">
-			<input type="hidden" name="step" value="result">
-			<input type="hidden" name="takeover" value="{takeover}">
-			<input type="submit" name="ACMS_POST_Form_Submit" value="送信する" id="btnSubmit" class="submitBtn">
-		</form>
-	<!-- /.submit --></div>
+    <form action="" method="post">
+      <input type="hidden" name="id" value="contactForm">
+      <input type="hidden" name="To[]" value="{email}">
+      <input type="hidden" name="AdminReply-To[]" value="<{email}>">
+      <input type="hidden" name="AdminFrom[]" value="<{email}>">
+      <input type="hidden" name="step" value="result">
+      <input type="hidden" name="takeover" value="{takeover}">
+      <input type="submit" name="ACMS_POST_Form_Submit" value="送信する" id="btnSubmit" class="submitBtn">
+    </form>
+  <!-- /.submit --></div>
 
 <!-- /.mailForm form-confirm --></div>

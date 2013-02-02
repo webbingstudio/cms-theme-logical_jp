@@ -1,56 +1,57 @@
 <!-- BEGIN_MODULE Entry_Body -->
 <div class="recent posts">
 <!-- BEGIN notFound -->
-<p class="notFound">ƒRƒ“ƒeƒ“ƒc‚Í€”õ’†‚Å‚·B</p>
+<p class="notFound">ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã¯æº–å‚™ä¸­ã§ã™ã€‚</p>
 <!-- END notFound -->
 
 <!-- BEGIN entry:loop -->
 <article class="post">
 <!-- BEGIN title:veil -->
-	<header class="postHeader">
-		<div class="postHeaderInner">
-			<h1 class="title"><a href="{permalink}">{title}</a></h1>
-			<p class="date"><span class="dateY">{date#Y}</span><span class="sep">”N</span><span class="dateM">{date#m}</span><span class="sep">Œ</span><span class="dateD">{date#d}<span class="sep">“ú</span></p>
-		<!--/.postHeaderInner --></div>
+  <header class="postHeader">
+    <div class="postHeaderInner">
+      <h1 class="title"><a href="{permalink}">{title}</a></h1>
+      <p class="date"><span class="dateY">{date#Y}</span><span class="sep">å¹´</span><span class="dateM">{date#m}</span><span class="sep">æœˆ</span><span class="dateD">{date#d}<span class="sep">æ—¥</span></p>
+    <!--/.postHeaderInner --></div>
 <!--#include file="/include/entry/entry_social_plugins_s.html" -->
-	<!--/.postHeader --></header>
+  <!--/.postHeader --></header>
 <!-- END title:veil -->
 
-	<div class="postContents freetxt">
+  <div class="postContents freetxt">
 <!--#include file="/admin/entry/title.html"-->
 
 <!-- BEGIN column:veil -->
 <!--#include file="/include/column.html"-->
 <!-- END column:veil -->
 <!-- BEGIN continueLink:veil -->
-<p class="moreLink"><a href="{continueUrl}">‚±‚Ì‹L–‚Ì‘±‚«‚ğ“Ç‚Ş</a></p>
+<p class="moreLink"><a href="{continueUrl}">ã“ã®è¨˜äº‹ã®ç¶šãã‚’èª­ã‚€</a></p>
 <!-- END continueLink:veil -->
 
 <!-- BEGIN adminEntryEdit -->
-		<div class="adminEntryEdit">
+    <div class="adminEntryEdit">
 <!--#include file="/admin/entry/edit.html"-->
 <!--#include file="/admin/entry/add.html"-->
-		<!--/.adminEntryEdit --></div>
+    <!--/.adminEntryEdit --></div>
 <!-- END adminEntryEdit -->
-	<!--/.postContents freetxt --></div>
+  <!--/.postContents freetxt --></div>
 
-	<footer class="postFooter">
+  <footer class="postFooter">
 <!-- BEGIN tag:veil -->
 <dl class="tag">
-	<dt>ƒ^ƒO</dt>
-	<dd><!-- BEGIN tag:loop --><a href="{url}">{name}</a><!-- BEGIN glue --><span class="sep">,&nbsp;</span><!-- END glue --><!-- END tag:loop --></dd>
+  <dt>ã‚¿ã‚°</dt>
+  <dd><!-- BEGIN tag:loop --><a href="{url}">{name}</a><!-- BEGIN glue --><span class="sep">,&nbsp;</span><!-- END glue --><!-- END tag:loop --></dd>
 </dl>
 <!-- END tag:veil -->
-<div class="meta">
+
+<div class="meta">
 <!-- BEGIN category:veil -->
-	<p class="category"><!-- BEGIN category:loop --><a href="{url}">{name}</a><!-- BEGIN glue -->&nbsp;&lt;&nbsp;<!-- END glue --><!-- END category:loop --></p>
+  <p class="category"><!-- BEGIN category:loop --><a href="{url}">{name}</a><!-- BEGIN glue -->&nbsp;&lt;&nbsp;<!-- END glue --><!-- END category:loop --></p>
 <!-- END category:veil -->
-	<p class="date">{date#Y}”N{date#m}Œ{date#d}“ú {date#H}:{date#i}:{date#s}</p>
-	<p class="backToTop"><a href="#document" title="ƒy[ƒWæ“ª" class="backToTop">£</a></p>
+  <p class="date">{date#Y}å¹´{date#m}æœˆ{date#d}æ—¥ {date#H}:{date#i}:{date#s}</p>
+  <p class="backToTop"><a href="#document" title="ãƒšãƒ¼ã‚¸å…ˆé ­" class="backToTop">â–²</a></p>
 <!--/.meta --></div>
 
 <!--#include file="/admin/entry/action.html"-->
-	<!--/.postFooter --></footer>
+  <!--/.postFooter --></footer>
 
 <!--/.post --></article>
 <!-- END entry:loop -->

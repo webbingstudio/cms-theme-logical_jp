@@ -1,77 +1,77 @@
 <!-- BEGIN_MODULE Admin_Comment_Edit -->
-	<div class="commentForm">
+  <div class="commentForm">
 <!-- BEGIN step#apply -->
 
-<!-- BEGIN header#insert -->		<h2 id="comment-form">コメントを投稿する</h2><!-- END header#insert -->
-<!-- BEGIN header#reply -->		<h2><a name="comment-form">コメントに返信する</a></h2><!-- END header#reply -->
+<!-- BEGIN header#insert -->    <h2 id="comment-form">コメントを投稿する</h2><!-- END header#insert -->
+<!-- BEGIN header#reply -->   <h2><a name="comment-form">コメントに返信する</a></h2><!-- END header#reply -->
 
 <div class="comForm">
 <form action="#comment-form" method="post" id="comment-form" class="apply">
-	<dl class="dataDl">
-		<dt>名前</dt>
-		<dd>
-			<input type="text" name="name" value="{name}" class="inputTxt inputM">
-			<input type="hidden" name="comment[]" value="name">
-			<input type="hidden" name="name:validator#required" id="validator-name-required">
-			<label for="validator-name-required" class="errorMsg validator-result-{name:validator#required}">名前が入力されていません</label>
-		</dd>
-		<dt>メールアドレス</dt>
-		<dd>
-			<input type="text" name="mail" value="{mail}" class="inputTxt inputL">
-			<input type="hidden" name="comment[]" value="mail">
-			<input type="hidden" name="mail:validator#email" id="validator-mail-email">
-			<label for="validator-mail-email" class="errorMsg validator-result-{mail:validator#email}">無効なメールアドレスです。</label>
-		</dd>
-		<dt>URL</dt>
-		<dd>
-			<input type="text" name="url" value="{url}" class="inputTxt inputL">
-			<input type="hidden" name="comment[]" value="url">
-			<input type="hidden" name="url:validator#url" id="validator-url-url">
-			<label for="validator-url-url" class="errorMsg validator-result-{url:validator#url}">無効なURLです。</label>
-		</dd>
-		<dt>タイトル</dt>
-		<dd>
-			<input type="text" name="title" value="Re:{title}" class="inputTxt inputL">
-			<input type="hidden" name="comment[]" value="title">
-			<input type="hidden" name="title:validator#required" id="validator-title-required">
-			<input type="hidden" name="title:validator#blackList" id="validator-title-blackList">
-			<label for="validator-title-required" class="errorMsg validator-result-{title:validator#required}">タイトルが入力されていません。</label>
-			<label for="validator-title-blackList" class="errorMsg validator-result-{title:validator#blackList}">タイトルに不適切な言葉が含まれています。</label>
-		</dd>
-		<dt>コメント</dt>
-		<dd>
-			<textarea name="body" rows="10" class="inputTxt inputL"></textarea>
-			<input type="hidden" name="comment[]" value="body">
-			<input type="hidden" name="body:validator#required" id="validator-body-required">
-			<input type="hidden" name="body:validator#blackList" id="validator-body-blackList">
-			<label for="validator-body-required" class="errorMsg validator-result-{body:validator#required}">コメントが入力されていません</label>
-			<label for="validator-body-blackList" class="errorMsg validator-result-{body:validator#blackList}">コメントに不適切な言葉が含まれています</label>
-		</dd>
-		<dt>パスワード</dt>
-		<dd>
-			<input type="password" name="pass" value="{pass}" class="inputTxt inputS">
-			<input type="hidden" name="comment[]" value="pass">
-			<input type="hidden" name="pass:validator#required" id="validator-pass-required">
-			<input type="hidden" name="pass:validator#regexp" value="^[0-9a-z]+$" id="validator-pass-regexp">
-			<label for="validator-pass-required" class="errorMsg validator-result-{pass:validator#required}">パスワードが入力されていません</label>
-			<label for="validator-pass-regexp" class="errorMsg validator-result-{pass:validator#regexp}">パスワードは半角小文字英数字で入力してください。</label>
-		</dd>
-		<dt>Cookieに保存</dt>
-		<dd class="persistent">
-			<input type="hidden" name="persistent" value="off">
-			<input type="checkbox" name="persistent" value="on" id="input-checkbox-persistent">
-			<label for="input-checkbox-persistent"> 次回から名前などを自動で入力します</label>
-			<input type="hidden" name="comment[]" value="persistent">
-		</dd>
-	</dl>
+  <dl class="dataDl">
+    <dt>名前</dt>
+    <dd>
+      <input type="text" name="name" value="{name}" class="inputTxt inputM">
+      <input type="hidden" name="comment[]" value="name">
+      <input type="hidden" name="name:validator#required" id="validator-name-required">
+      <label for="validator-name-required" class="errorMsg validator-result-{name:validator#required}">名前が入力されていません</label>
+    </dd>
+    <dt>メールアドレス</dt>
+    <dd>
+      <input type="text" name="mail" value="{mail}" class="inputTxt inputL">
+      <input type="hidden" name="comment[]" value="mail">
+      <input type="hidden" name="mail:validator#email" id="validator-mail-email">
+      <label for="validator-mail-email" class="errorMsg validator-result-{mail:validator#email}">無効なメールアドレスです。</label>
+    </dd>
+    <dt>URL</dt>
+    <dd>
+      <input type="text" name="url" value="{url}" class="inputTxt inputL">
+      <input type="hidden" name="comment[]" value="url">
+      <input type="hidden" name="url:validator#url" id="validator-url-url">
+      <label for="validator-url-url" class="errorMsg validator-result-{url:validator#url}">無効なURLです。</label>
+    </dd>
+    <dt>タイトル</dt>
+    <dd>
+      <input type="text" name="title" value="Re:{title}" class="inputTxt inputL">
+      <input type="hidden" name="comment[]" value="title">
+      <input type="hidden" name="title:validator#required" id="validator-title-required">
+      <input type="hidden" name="title:validator#blackList" id="validator-title-blackList">
+      <label for="validator-title-required" class="errorMsg validator-result-{title:validator#required}">タイトルが入力されていません。</label>
+      <label for="validator-title-blackList" class="errorMsg validator-result-{title:validator#blackList}">タイトルに不適切な言葉が含まれています。</label>
+    </dd>
+    <dt>コメント</dt>
+    <dd>
+      <textarea name="body" rows="10" class="inputTxt inputL"></textarea>
+      <input type="hidden" name="comment[]" value="body">
+      <input type="hidden" name="body:validator#required" id="validator-body-required">
+      <input type="hidden" name="body:validator#blackList" id="validator-body-blackList">
+      <label for="validator-body-required" class="errorMsg validator-result-{body:validator#required}">コメントが入力されていません</label>
+      <label for="validator-body-blackList" class="errorMsg validator-result-{body:validator#blackList}">コメントに不適切な言葉が含まれています</label>
+    </dd>
+    <dt>パスワード</dt>
+    <dd>
+      <input type="password" name="pass" value="{pass}" class="inputTxt inputS">
+      <input type="hidden" name="comment[]" value="pass">
+      <input type="hidden" name="pass:validator#required" id="validator-pass-required">
+      <input type="hidden" name="pass:validator#regexp" value="^[0-9a-z]+$" id="validator-pass-regexp">
+      <label for="validator-pass-required" class="errorMsg validator-result-{pass:validator#required}">パスワードが入力されていません</label>
+      <label for="validator-pass-regexp" class="errorMsg validator-result-{pass:validator#regexp}">パスワードは半角小文字英数字で入力してください。</label>
+    </dd>
+    <dt>Cookieに保存</dt>
+    <dd class="persistent">
+      <input type="hidden" name="persistent" value="off">
+      <input type="checkbox" name="persistent" value="on" id="input-checkbox-persistent">
+      <label for="input-checkbox-persistent"> 次回から名前などを自動で入力します</label>
+      <input type="hidden" name="comment[]" value="persistent">
+    </dd>
+  </dl>
 
-	<div class="comPost">
-		<input type="submit" name="ACMS_POST_Comment_Confirm_Insert" class="submitBtn" id="btnComConfirm" value="確認する"><!-- BEGIN reply:veil -->		<input type="hidden" name="reply_id" value="{reply_id}">
-		<input type="hidden" name="comment[]" value="reply_id"><!-- END reply:veil -->
-		<input type="hidden" name="action" value="insert">
-		<input type="hidden" name="step" value="reapply">
-		<input type="hidden" name="nextstep" value="confirm">
-	<!-- /.comPost --></div>
+  <div class="comPost">
+    <input type="submit" name="ACMS_POST_Comment_Confirm_Insert" class="submitBtn" id="btnComConfirm" value="確認する"><!-- BEGIN reply:veil -->    <input type="hidden" name="reply_id" value="{reply_id}">
+    <input type="hidden" name="comment[]" value="reply_id"><!-- END reply:veil -->
+    <input type="hidden" name="action" value="insert">
+    <input type="hidden" name="step" value="reapply">
+    <input type="hidden" name="nextstep" value="confirm">
+  <!-- /.comPost --></div>
 </form>
 <!-- /.comForm --></div>
 
@@ -83,78 +83,78 @@
 
 <div class="comForm">
 <form action="#comment-form" method="post" id="comment-form" class="reapply">
-	<dl class="dataDl">
-		<dt>名前</dt>
-		<dd>
-			<input type="text" name="name" value="{name}" class="inputTxt inputM">
-			<input type="hidden" name="comment[]" value="name">
-			<input type="hidden" name="name:validator#required" id="validator-name-required">
-			<label for="validator-name-required" class="errorMsg validator-result-{name:validator#required}">名前が入力されていません</label>
-		</dd>
-		<dt>メールアドレス</dt>
-		<dd>
-			<input type="text" name="mail" value="{mail}" class="inputTxt inputL">
-			<input type="hidden" name="comment[]" value="mail">
-			<input type="hidden" name="mail:validator#email" id="validator-mail-email">
-			<label for="validator-mail-email" class="errorMsg validator-result-{mail:validator#email}">無効なメールアドレスです。</label>
-		</dd>
-		<dt>URL</dt>
-		<dd>
-			<input type="text" name="url" value="{url}" class="inputTxt inputL">
-			<input type="hidden" name="comment[]" value="url">
-			<input type="hidden" name="url:validator#url" id="validator-url-url">
-			<label for="validator-url-url" class="errorMsg validator-result-{url:validator#url}">無効なURLです。</label>
-		</dd>
-		<dt>タイトル</dt>
-		<dd>
-			<input type="text" name="title" value="{title}" class="inputTxt inputL" id="input-text-title">
-			<input type="hidden" name="comment[]" value="title">
-			<input type="hidden" name="title:validator#required" id="validator-title-required">
-			<input type="hidden" name="title:validator#blackList" id="validator-title-blackList">
-			<label for="validator-title-required" class="errorMsg validator-result-{title:validator#required}">タイトルが入力されていません。</label>
-			<label for="validator-title-blackList" class="errorMsg validator-result-{title:validator#blackList}">タイトルに不適切な言葉が含まれています。</label>
-		</dd>
-		<dt>コメント</dt>
-		<dd>
-			<textarea name="body" rows="10" class="inputTxt inputL">{body}</textarea>
-			<input type="hidden" name="comment[]" value="body">
-			<input type="hidden" name="body:validator#required" id="validator-body-required">
-			<input type="hidden" name="body:validator#blackList" id="validator-body-blackList">
-			<label for="validator-body-required" class="errorMsg validator-result-{body:validator#required}">コメントが入力されていません</label>
-			<label for="validator-body-blackList" class="errorMsg validator-result-{body:validator#blackList}">コメントに不適切な言葉が含まれています</label>
-		</dd>
-		<dt>パスワード</dt>
-		<dd>
-			<input type="password" name="pass" value="{pass}" class="inputTxt inputS">
-			<input type="hidden" name="comment[]" value="pass">
-			<input type="hidden" name="pass:validator#required" id="validator-pass-required">
-			<input type="hidden" name="pass:validator#regexp" value="^[0-9a-z]+$" id="validator-pass-regexp">
-			<label for="validator-pass-required" class="errorMsg validator-result-{pass:validator#required}">パスワードが入力されていません</label>
-			<label for="validator-pass-regexp" class="errorMsg validator-result-{pass:validator#regexp}">パスワードは半角小文字英数字で入力してください。</label>
-		</dd><!-- BEGIN persistent:checked#off -->
-		<dt>Cookieに保存</dt>
-		<dd class="persistent">
-			<input type="hidden" name="persistent" value="off">
-			<input type="checkbox" name="persistent" value="on"{persistent:checked#on} id="commentPersistentCheckbox">
-			<label for="commentPersistentCheckbox"> 次回から名前などを自動で入力します</label>
-			<input type="hidden" name="comment[]" value="persistent">
-		</dd><!-- END persistent:checked#off -->
-	</dl>
+  <dl class="dataDl">
+    <dt>名前</dt>
+    <dd>
+      <input type="text" name="name" value="{name}" class="inputTxt inputM">
+      <input type="hidden" name="comment[]" value="name">
+      <input type="hidden" name="name:validator#required" id="validator-name-required">
+      <label for="validator-name-required" class="errorMsg validator-result-{name:validator#required}">名前が入力されていません</label>
+    </dd>
+    <dt>メールアドレス</dt>
+    <dd>
+      <input type="text" name="mail" value="{mail}" class="inputTxt inputL">
+      <input type="hidden" name="comment[]" value="mail">
+      <input type="hidden" name="mail:validator#email" id="validator-mail-email">
+      <label for="validator-mail-email" class="errorMsg validator-result-{mail:validator#email}">無効なメールアドレスです。</label>
+    </dd>
+    <dt>URL</dt>
+    <dd>
+      <input type="text" name="url" value="{url}" class="inputTxt inputL">
+      <input type="hidden" name="comment[]" value="url">
+      <input type="hidden" name="url:validator#url" id="validator-url-url">
+      <label for="validator-url-url" class="errorMsg validator-result-{url:validator#url}">無効なURLです。</label>
+    </dd>
+    <dt>タイトル</dt>
+    <dd>
+      <input type="text" name="title" value="{title}" class="inputTxt inputL" id="input-text-title">
+      <input type="hidden" name="comment[]" value="title">
+      <input type="hidden" name="title:validator#required" id="validator-title-required">
+      <input type="hidden" name="title:validator#blackList" id="validator-title-blackList">
+      <label for="validator-title-required" class="errorMsg validator-result-{title:validator#required}">タイトルが入力されていません。</label>
+      <label for="validator-title-blackList" class="errorMsg validator-result-{title:validator#blackList}">タイトルに不適切な言葉が含まれています。</label>
+    </dd>
+    <dt>コメント</dt>
+    <dd>
+      <textarea name="body" rows="10" class="inputTxt inputL">{body}</textarea>
+      <input type="hidden" name="comment[]" value="body">
+      <input type="hidden" name="body:validator#required" id="validator-body-required">
+      <input type="hidden" name="body:validator#blackList" id="validator-body-blackList">
+      <label for="validator-body-required" class="errorMsg validator-result-{body:validator#required}">コメントが入力されていません</label>
+      <label for="validator-body-blackList" class="errorMsg validator-result-{body:validator#blackList}">コメントに不適切な言葉が含まれています</label>
+    </dd>
+    <dt>パスワード</dt>
+    <dd>
+      <input type="password" name="pass" value="{pass}" class="inputTxt inputS">
+      <input type="hidden" name="comment[]" value="pass">
+      <input type="hidden" name="pass:validator#required" id="validator-pass-required">
+      <input type="hidden" name="pass:validator#regexp" value="^[0-9a-z]+$" id="validator-pass-regexp">
+      <label for="validator-pass-required" class="errorMsg validator-result-{pass:validator#required}">パスワードが入力されていません</label>
+      <label for="validator-pass-regexp" class="errorMsg validator-result-{pass:validator#regexp}">パスワードは半角小文字英数字で入力してください。</label>
+    </dd><!-- BEGIN persistent:checked#off -->
+    <dt>Cookieに保存</dt>
+    <dd class="persistent">
+      <input type="hidden" name="persistent" value="off">
+      <input type="checkbox" name="persistent" value="on"{persistent:checked#on} id="commentPersistentCheckbox">
+      <label for="commentPersistentCheckbox"> 次回から名前などを自動で入力します</label>
+      <input type="hidden" name="comment[]" value="persistent">
+    </dd><!-- END persistent:checked#off -->
+  </dl>
 
-	<div class="comPost"><!-- BEGIN action#insert -->
-		<input type="submit" name="ACMS_POST_Comment_Confirm_Insert" class="submitBtn" id="btnComSubmit" value="投稿する"><!-- END action#insert --><!-- BEGIN action#update -->
-		<input type="submit" name="ACMS_POST_Comment_Confirm_Update" class="submitBtn" id="btnComUpdate" value="更新する">
-		<input type="submit" name="ACMS_POST_Comment_Confirm_Delete" class="submitBtn" id="btnComDelete" value="削除する"><!-- END action#update --><!-- BEGIN action#delete -->
-		<input type="submit" name="ACMS_POST_Comment_Confirm_Update" class="submitBtn" id="btnComUpdate" value="更新する">
-		<input type="submit" name="ACMS_POST_Comment_Confirm_Delete" class="submitBtn" id="btnComDelete" value="削除する"><!-- END action#delete --><!-- BEGIN oldPass:veil -->
-		<input type="hidden" name="old_pass" value="{old_pass}">
-		<input type="hidden" name="comment[]" value="old_pass"><!-- END oldPass:veil --><!-- BEGIN reply:veil -->
-		<input type="hidden" name="reply_id" value="{reply_id}">
-		<input type="hidden" name="comment[]" value="reply_id"><!-- END reply:veil -->
-		<input type="hidden" name="action" value="{action}">
-		<input type="hidden" name="step" value="reapply">
-		<input type="hidden" name="nextstep" value="confirm">
-	<!-- /.comPost --></div>
+  <div class="comPost"><!-- BEGIN action#insert -->
+    <input type="submit" name="ACMS_POST_Comment_Confirm_Insert" class="submitBtn" id="btnComSubmit" value="投稿する"><!-- END action#insert --><!-- BEGIN action#update -->
+    <input type="submit" name="ACMS_POST_Comment_Confirm_Update" class="submitBtn" id="btnComUpdate" value="更新する">
+    <input type="submit" name="ACMS_POST_Comment_Confirm_Delete" class="submitBtn" id="btnComDelete" value="削除する"><!-- END action#update --><!-- BEGIN action#delete -->
+    <input type="submit" name="ACMS_POST_Comment_Confirm_Update" class="submitBtn" id="btnComUpdate" value="更新する">
+    <input type="submit" name="ACMS_POST_Comment_Confirm_Delete" class="submitBtn" id="btnComDelete" value="削除する"><!-- END action#delete --><!-- BEGIN oldPass:veil -->
+    <input type="hidden" name="old_pass" value="{old_pass}">
+    <input type="hidden" name="comment[]" value="old_pass"><!-- END oldPass:veil --><!-- BEGIN reply:veil -->
+    <input type="hidden" name="reply_id" value="{reply_id}">
+    <input type="hidden" name="comment[]" value="reply_id"><!-- END reply:veil -->
+    <input type="hidden" name="action" value="{action}">
+    <input type="hidden" name="step" value="reapply">
+    <input type="hidden" name="nextstep" value="confirm">
+  <!-- /.comPost --></div>
 </form>
 <!-- /.comForm --></div>
 
@@ -164,31 +164,31 @@
 <h2 id="comment-form">内容の確認</h2>
 <div class="comForm comFormConfirm">
 <form action="#comment-form" method="post" id="comment-form" class="confirm">
-	<dl class="dataDl">
-		<dt>名前</dt><dd>{name}&nbsp;</dd>
-		<dt>メールアドレス</dt><dd>{mail}&nbsp;</dd>
-		<dt>URL</dt><dd>{url}&nbsp;</dd>
-		<dt>タイトル</dt><dd>{title}&nbsp;</dd>
-		<dt>コメント</dt><dd>{body}[nl2br]&nbsp;</dd>
-		<dt>パスワード</dt><dd><strong>表示されません</strong>&nbsp;</dd>
-	</dl><!-- BEGIN msg#insert -->
-	<p>上記の内容で投稿します。よろしいですか？</p><!-- END msg#insert --><!-- BEGIN msg#update -->
-	<p>上記の内容で更新します。よろしいですか？</p><!-- END msg#update --><!-- BEGIN msg#delete -->
-	<p>上記のコメントを削除します。よろしいですか？</p><!-- END msg#delete -->
+  <dl class="dataDl">
+    <dt>名前</dt><dd>{name}&nbsp;</dd>
+    <dt>メールアドレス</dt><dd>{mail}&nbsp;</dd>
+    <dt>URL</dt><dd>{url}&nbsp;</dd>
+    <dt>タイトル</dt><dd>{title}&nbsp;</dd>
+    <dt>コメント</dt><dd>{body}[nl2br]&nbsp;</dd>
+    <dt>パスワード</dt><dd><strong>表示されません</strong>&nbsp;</dd>
+  </dl><!-- BEGIN msg#insert -->
+  <p>上記の内容で投稿します。よろしいですか？</p><!-- END msg#insert --><!-- BEGIN msg#update -->
+  <p>上記の内容で更新します。よろしいですか？</p><!-- END msg#update --><!-- BEGIN msg#delete -->
+  <p>上記のコメントを削除します。よろしいですか？</p><!-- END msg#delete -->
 
-	<div class="comPost">
+  <div class="comPost">
 <!-- BEGIN action#insert -->
-		<input type="submit" name="ACMS_POST_Comment_Apply" class="submitBtn" id="btnComToInput" value="修正する">
-		<input type="submit" name="ACMS_POST_Comment_Insert" class="submitBtn" id="btnComSubmit" value="投稿する"><!-- END action#insert --><!-- BEGIN action#update -->
-		<input type="submit" name="ACMS_POST_Comment_Apply" class="submitBtn" id="btnComToInput" value="修正する">
-		<input type="submit" name="ACMS_POST_Comment_Update" class="submitBtn" id="btnComUpdate" value="更新する"><!-- END action#update --><!-- BEGIN action#delete -->
-		<input type="submit" name="ACMS_POST_Comment_Apply" class="submitBtn" id="btnComCancel" value="取り消す">
-		<input type="submit" name="ACMS_POST_Comment_Delete" class="submitBtn" id="btnComDelete" value="削除する"><!-- END action#delete -->
-		<input type="hidden" name="comment:takeover" value="{comment:takeover}">
-		<input type="hidden" name="action" value="{action}">
-		<input type="hidden" name="step" value="confirm">
-		<input type="hidden" name="nextstep" value="result">
-	<!-- /.comPost --></div>
+    <input type="submit" name="ACMS_POST_Comment_Apply" class="submitBtn" id="btnComToInput" value="修正する">
+    <input type="submit" name="ACMS_POST_Comment_Insert" class="submitBtn" id="btnComSubmit" value="投稿する"><!-- END action#insert --><!-- BEGIN action#update -->
+    <input type="submit" name="ACMS_POST_Comment_Apply" class="submitBtn" id="btnComToInput" value="修正する">
+    <input type="submit" name="ACMS_POST_Comment_Update" class="submitBtn" id="btnComUpdate" value="更新する"><!-- END action#update --><!-- BEGIN action#delete -->
+    <input type="submit" name="ACMS_POST_Comment_Apply" class="submitBtn" id="btnComCancel" value="取り消す">
+    <input type="submit" name="ACMS_POST_Comment_Delete" class="submitBtn" id="btnComDelete" value="削除する"><!-- END action#delete -->
+    <input type="hidden" name="comment:takeover" value="{comment:takeover}">
+    <input type="hidden" name="action" value="{action}">
+    <input type="hidden" name="step" value="confirm">
+    <input type="hidden" name="nextstep" value="result">
+  <!-- /.comPost --></div>
 </form>
 <!-- /.comForm --></div>
 
@@ -198,23 +198,23 @@
 <h2 id="comment-form">送信完了</h2>
 <div class="comForm">
 <form action="" method="post">
-	<dl class="dataDl">
-		<dt>名前</dt><dd>{name}&nbsp;</dd>
-		<dt>メールアドレス</dt><dd>{mail}&nbsp;</dd>
-		<dt>URL</dt><dd>{url}&nbsp;</dd>
-		<dt>タイトル</dt><dd>{title}&nbsp;</dd>
-		<dt>コメント</dt><dd>{body}[nl2br]&nbsp;</dd>
-		<dt>パスワード</dt><dd><strong>表示されません。</strong></dd>
-	</dl><!-- BEGIN msg#insert -->
-	<p>上記の内容で投稿しました。</p><!-- END msg#insert --><!-- BEGIN msg#update -->
-	<p>上記の内容で保存しました。</p><!-- END msg#update --><!-- BEGIN msg#delete -->
-	<p>上記のコメントを削除しました。</p><!-- END msg#delete -->
+  <dl class="dataDl">
+    <dt>名前</dt><dd>{name}&nbsp;</dd>
+    <dt>メールアドレス</dt><dd>{mail}&nbsp;</dd>
+    <dt>URL</dt><dd>{url}&nbsp;</dd>
+    <dt>タイトル</dt><dd>{title}&nbsp;</dd>
+    <dt>コメント</dt><dd>{body}[nl2br]&nbsp;</dd>
+    <dt>パスワード</dt><dd><strong>表示されません。</strong></dd>
+  </dl><!-- BEGIN msg#insert -->
+  <p>上記の内容で投稿しました。</p><!-- END msg#insert --><!-- BEGIN msg#update -->
+  <p>上記の内容で保存しました。</p><!-- END msg#update --><!-- BEGIN msg#delete -->
+  <p>上記のコメントを削除しました。</p><!-- END msg#delete -->
 
-	<div class="comPost">
-		<input type="submit" name="ACMS_POST_2GET" class="submitBtn" id="btnComToIndex" value="コメント一覧へ">
-		<input type="hidden" name="fragment" value="comment">
-		<input type="hidden" name="eid" value="%{EID}">
-	<!-- /.comPost --></div>
+  <div class="comPost">
+    <input type="submit" name="ACMS_POST_2GET" class="submitBtn" id="btnComToIndex" value="コメント一覧へ">
+    <input type="hidden" name="fragment" value="comment">
+    <input type="hidden" name="eid" value="%{EID}">
+  <!-- /.comPost --></div>
 </form>
 <!-- /.comForm --></div>
 
@@ -224,15 +224,15 @@
 <h2 id="comment-form">パスワードの確認</h2>
 <div class="comForm">
 <form action="#comment-form" method="post" id="comment-form">
-	<div class="comPost comAuth">
+  <div class="comPost comAuth">
 <!-- BEGIN msg#auth -->
-	<p>上記のコメントを投稿する際に登録したパスワードを入力してください。</p><!-- END msg#auth -->
-		<input type="password" name="pass" value="{pass}" class="inputTxt inputS"> 
-		<input type="submit" name="ACMS_POST_Comment_Auth" class="submitBtn" id="btnComAuth" value="認証する">
-		<input type="hidden" name="comment[]" value="pass">
-		<input type="hidden" name="pass:validator#auth" value="%{CMID}" id="validator-pass-auth">
-		<label for="validator-pass-auth" class="validator-result-{pass:validator#auth}">パスワードが正しくありません。</label>
-	<!-- /.comPost comAuth --></div>
+  <p>上記のコメントを投稿する際に登録したパスワードを入力してください。</p><!-- END msg#auth -->
+    <input type="password" name="pass" value="{pass}" class="inputTxt inputS"> 
+    <input type="submit" name="ACMS_POST_Comment_Auth" class="submitBtn" id="btnComAuth" value="認証する">
+    <input type="hidden" name="comment[]" value="pass">
+    <input type="hidden" name="pass:validator#auth" value="%{CMID}" id="validator-pass-auth">
+    <label for="validator-pass-auth" class="validator-result-{pass:validator#auth}">パスワードが正しくありません。</label>
+  <!-- /.comPost comAuth --></div>
 </form>
 <!-- /.comForm --></div>
 
