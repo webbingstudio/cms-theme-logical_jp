@@ -28,7 +28,9 @@ a-blog cms 1.5.1以上
 インストール方法
 ------------------------------------
 
-###フルインストール（推薦）
+###フルインポート（推薦）
+
+http://webbingstudio.com/logicaljp/install/install_ablogcms.html
 
 必須カテゴリー・テストエントリーも含め、全ての設定を自動インポートします。
 
@@ -42,16 +44,18 @@ a-blog cms 1.5.1以上
 
 ###テーマのみのインストール
 
+http://webbingstudio.com/logicaljp/install/install_ablogcms_manual.html
+
 既存のコンフィグを上書きしたくないときにご利用ください。こちらの動作保証はしていません。
 
 1. ファイルを解凍する
-2. 「import_logical_jp_acms/themes/logical_jp_acms」内の「news」ディレクトリの名称を、現在のサイトで新着情報としているカテゴリーの「コード名」に変更する
-3. 「import_logical_jp_acms/themes/logical_jp_acms」フォルダ以下を、a-blog cmsの「themes」ディレクトリ以下にアップロードする
-4. 管理ページ「モジュールID」で、「__module_name_list.txt」の通りにモジュールIDを新規作成する
-5. 管理ページ「コンフィグ＞テーマ設定」で、「__theme_config_list.txt」の通りにテーマ名、ファイル名を設定する（siteテーマを使っていた場合は、トップページのみhome.htmlに変更）
-6. 管理ページ「ブログ」の必須設定・ソーシャルメディア関連の設定を変更する
-7. 管理ページ「カテゴリー」で「privacy」「sitemap」というコード名で新規作成する
-8. 管理ページ「フォーム」で「contactForm」というコード名で新規作成する
+2. 「import_logical_jp_acms/themes/logical_jp_acms」内の「news」ディレクトリの名称を、現在のサイトで新着情報としているカテゴリーの「コード名」に変更する（ない場合はnewsで新規作成する）
+3. 「privacy」「sitemap」というコード名のカテゴリーを新規作成する
+4. 「import_logical_jp_acms/themes/logical_jp_acms」フォルダを、a-blog cmsの「themes」ディレクトリ以下にアップロードする
+5. 管理ページ「モジュールID」で、「モジュールID設定一覧.html」の通りにモジュールIDを新規作成する
+6. 管理ページ「コンフィグ＞テーマ設定」で、「テーマ設定一覧.html」の通りにテーマ名、ファイル名を設定する（siteテーマを使っていた場合は、トップページのみhome.htmlに変更）
+7. 管理ページ「ブログ」の必須設定・ソーシャルメディア関連の設定を変更する
+8. 管理ページ「フォーム」で「contactForm」というコード名で新規作成する（siteテーマを使っていた場合はそのまま利用できます）
 
 更新履歴
 ------------------------------------
