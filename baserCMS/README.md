@@ -1,7 +1,7 @@
 Theme "logical_jp" for baserCMS
 ====================================
 
-version 1.15
+version 1.16
 
 Author: Seiko Kuchida  
 mail[at]webbingstudio.com  
@@ -45,6 +45,7 @@ http://webbingstudio.com/logicaljp/install/install_basercms.html
 更新履歴
 ------------------------------------
 
+1.16 2012.02.05 配色にブラックを追加  
 1.15 2012.01.21 「スマートURL」がオフでも画像のリンクが切れないよう修正  
 1.14 2012.01.14 コーディングルールの見直し  
                 CSS見出しの体裁を変更  

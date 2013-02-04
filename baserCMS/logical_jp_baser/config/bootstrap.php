@@ -55,7 +55,7 @@ $wsLogHomeSummary['posts'][] = array(
        任意設定
 ============================================== */
 
-/* カラーを指定してください　gray, blue, green, brown
+/* カラーを指定してください　gray, blue, green, brown, black
 未指定はグレーになります
 ------------------------------------------------------------- */
 global $wsLogColor;
