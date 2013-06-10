@@ -322,6 +322,12 @@ table.entryFormTable th {
   height: auto !important;
 }
 
+#document img.column-map-auto {
+  width: 100% !important;
+  height: auto !important;
+}
+
+
 }
 
 /*!
