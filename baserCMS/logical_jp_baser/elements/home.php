@@ -52,11 +52,9 @@ global $wsLogFbPageURL;
 if(isset($wsLogFbPageURL)): ?>
 <section id="fbPage">
 	<h1><?php echo $bcBaser->_view->viewVars['siteConfig']['name']; ?>のFacebookページ</h1>
-
-<script>
-var wrapperW = $('#main #fbPage').width();
-document.write('<div class="fb-like-box" data-href="<?php echo $wsLogFbPageURL; ?>" data-width="' + wrapperW + '" data-height="185" data-show-faces="true" data-border-color="#FFFFFF" data-stream="false" data-header="false"></div>');
-</script>
+	<div class="sectionContents">
+		<div class="fb-like-box" data-href="<?php echo $wsLogFbPageURL; ?>" data-width="582" data-height="185" data-show-faces="true" data-stream="false" data-show-border="false" data-header="false"></div>
+	<!-- /.sectionContents --></div>
 <!-- /#fbPage --></section>
 <?php endif ?>
 

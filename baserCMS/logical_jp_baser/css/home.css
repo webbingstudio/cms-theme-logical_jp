@@ -392,7 +392,7 @@
   float: left;
   width: 592px;
   margin-bottom: 1.6em;
-  padding: 1.6em 0;
+  padding: 1.6em 0 .8em;
   border-style: solid;
   border-color: #729FD4;
   border-width: 1px;
@@ -406,15 +406,22 @@
   #main #fbPage h1 {
     height: 38px;
     line-height: 38px;
-    margin: 0 1em 1em;
+    margin: 0 1em 10px;
     padding-left: 50px;
     background-position: -400px 0;
     font-size: 180%;
     vertical-align: middle;
   }
 
-  #main #fbPage .fb-like-box {
-    margin: 0 auto;
+  #main #fbPage .sectionContents {
+    padding: 0 5px;
+  }
+
+  #main #fbPage .fbcomments,
+  #main #fbPage .fb_iframe_widget,
+  #main #fbPage .fb_iframe_widget iframe,
+  #main #fbPage .fb_iframe_widget span {
+      width: 100% !important;
   }
 
 

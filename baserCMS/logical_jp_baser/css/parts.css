@@ -623,6 +623,12 @@
   border-radius: 6px;
 }
 
+  #sub .fbPage .fbcomments,
+  #sub .fbPage .fb_iframe_widget,
+  #sub .fbPage .fb_iframe_widget iframe,
+  #sub .fbPage .fb_iframe_widget span {
+      width: 100% !important;
+  }
 
 /* widget-local-navi(baserCMS only) */
 
