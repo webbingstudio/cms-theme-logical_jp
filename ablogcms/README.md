@@ -1,7 +1,7 @@
 Theme "logical_jp" for a-blog cms
 ====================================
 
-version 1.12
+version 1.13
 
 Author: Seiko Kuchida  
 mail[at]webbingstudio.com  
@@ -60,6 +60,7 @@ http://webbingstudio.com/logicaljp/install/install_ablogcms_manual.html
 更新履歴
 ------------------------------------
 
+1.13 2013.06.21 Facebook Like Boxの仕様変更に伴う表示不具合を修正  
 1.12 2013.06.10 template.yamlファイルを追加（テーマの設定が簡単になりました）  
                 地図画像がウィンドウの拡大・縮小に追随しない不具合を修正  
                 フッタのコピーライト表記を修正  
