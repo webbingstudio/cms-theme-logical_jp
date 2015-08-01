@@ -1,0 +1,24 @@
+<!-- BEGIN_MODULE Entry_Summary id="indexSummary" -->
+<div class="recent summary">
+<!-- BEGIN notFound -->
+<p class="notFound">コンテンツは準備中です。</p>
+<!-- END notFound -->
+<!-- BEGIN unit:loop --><!-- BEGIN entry:loop -->
+<article class="post">
+  <a href="{url}" style="height:{y}px;">
+    <figure style="width:{x}px; height:{y}px; overflow:hidden;">
+  <!-- BEGIN image:veil --><img src="%{ROOT_DIR}{path}" width="{imgX}" height="{imgY}" style="left:{left}px; top:{top}px; position:relative;"><!-- END image:veil --><!-- BEGIN noimage --><img src="/resources/images/common/noimg_01.jpg"><!-- END noimage -->
+    </figure>
+    <div class="postContents">
+      <h1>{title}</h1>
+      <p class="summary">{summary}[trim(100, '...')]</p>
+      <p class="moreLink"><b>もっと詳しく</b></p>
+    <!-- /.postContents --></div>
+  </a>
+<!-- /.post --></article>
+<!-- END entry:loop --><!-- END unit:loop -->
+
+<!-- /.recent summary --></div>
+
+<!--#include file="/include/common/contents_nav.html" -->
+<!-- END_MODULE Entry_Summary -->

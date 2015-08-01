@@ -1,0 +1,55 @@
+<!-- BEGIN_MODULE Entry_Body -->
+<!-- BEGIN entry:loop -->
+<article class="article">
+<!-- BEGIN title:veil -->
+  <header class="articleHeader">
+    <div class="articleHeaderInner">
+      <h1 class="title">{title}</h1>
+      <p class="date"><span class="dateY">{date#Y}</span><span class="sep">年</span><span class="dateM">{date#m}</span><span class="sep">月</span><span class="dateD">{date#d}<span class="sep">日</span></p>
+    <!--/.articleHeaderInner --></div>
+<!--#include file="/include/entry/entry_social_plugins_s.html" -->
+  <!--/.articleHeader --></header>
+<!-- END title:veil -->
+
+  <div class="articleContents freetxt">
+<!--#include file="/admin/entry/title.html"-->
+
+<!-- BEGIN column:veil -->
+<!--#include file="/include/column.html"-->
+<!-- END column:veil -->
+
+<!-- BEGIN adminEntryEdit -->
+    <div class="adminEntryEdit">
+<!--#include file="/admin/entry/edit.html"-->
+<!--#include file="/admin/entry/add.html"-->
+    <!--/.adminEntryEdit --></div>
+<!-- END adminEntryEdit -->
+  <!--/.articleContents freetxt --></div>
+
+<!-- BEGIN_MODULE Touch_NotEdit -->
+  <footer class="articleFooter">
+<!--#include file="/include/entry/entry_social_plugins_l.html" -->
+
+<div class="meta">
+<!-- BEGIN category:veil -->
+  <p class="category"><!-- BEGIN category:loop --><a href="{url}">{name}</a><!-- BEGIN glue -->&nbsp;&lt;&nbsp;<!-- END glue --><!-- END category:loop --></p>
+  <p class="date">{date#Y}年{date#m}月{date#d}日 {date#H}:{date#i}:{date#s}</p>
+<!-- END category:veil -->
+<!--/.meta --></div>
+
+<!-- BEGIN tag:veil -->
+<dl class="tag">
+  <dt>タグ</dt>
+  <dd><!-- BEGIN tag:loop --><a href="{url}">{name}</a><!-- BEGIN glue --><span class="sep">,&nbsp;</span><!-- END glue --><!-- END tag:loop --></dd>
+</dl>
+<!-- END tag:veil -->
+
+<!--#include file="/admin/entry/action.html"-->
+  <!--/.articleFooter --></footer>
+<!-- END_MODULE Touch_NotEdit -->
+
+<!--/.article --></article>
+<!-- END entry:loop -->
+
+<!--#include file="/include/entry/entry_serial_nav.html" -->
+<!-- END_MODULE Entry_Body -->

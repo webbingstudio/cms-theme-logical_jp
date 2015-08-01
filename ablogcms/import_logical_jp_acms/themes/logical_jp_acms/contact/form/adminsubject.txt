@@ -1,0 +1,1 @@
+【%{BLOG_NAME}】{description}に送信がありました No.%{Y}%{n}%{j}%{H}%{i}%{s}

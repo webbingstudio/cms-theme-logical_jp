@@ -1,0 +1,279 @@
+@charset "utf-8";
+/*!
+ * color_blue CSS
+ * ---------------------------------------------
+ * 配色に関するCSSです
+ */
+
+
+/* text-color */
+
+a,
+.freetxt h4,
+.freetxt .lv4
+{ color: #1360BA; }
+
+a:visited
+{ color: #777; }
+
+
+/* background-color */
+
+#main .headline .post a:hover,
+#main .headline .post a:focus,
+#footer,
+#main #blogComment .relation .comment,
+.freetxt table thead th,
+#document .column-image-auto p.caption,
+#document .column-image-left p.caption,
+#document .column-image-center p.caption,
+#document .column-image-right p.caption,
+#document .column-eximage-auto p.caption,
+#document .column-eximage-left p.caption,
+#document .column-eximage-center p.caption,
+#document .column-eximage-right p.caption,
+.home #main #pickup .post a:hover
+{ background: #EEECE2; }
+
+#header #headerNav ul li a:hover,
+#header #headerNav ul li a:focus,
+#main .section .sectionHeader,
+#main .summary .post a:hover,
+#main .headline .post a,
+#main .posts .post .postContents p.moreLink,
+#main .searchResult,
+#sub #localNav ul li a:hover,
+#sub #localNav ul li a:focus,
+#sub #localNav ul li.current a:link,
+#sub #localNav ul li.current a:visited,
+#main .mailForm .mailStep li .num,
+#sub .menu,
+.freetxt h2,
+.freetxt .lv2,
+.freetxt table tbody th,
+.freetxt .box02,
+.freetxt blockquote,
+.home #main #pickup .post a
+{ background-color: #F6F5F0; }
+
+#footer .backToTop,
+#main .contentsNav p.pager a:active,
+#main .contentsNav p.pager .cur,
+#main .contentsNav p.pager .cur:visited,
+#main .mailForm .mailStep li.current,
+#main .mailForm .mailStep li.current .num
+{ background-color: #1360BA; }
+
+#footer .backToTop a:hover
+{ background-color: #2174C5; }
+
+#main .headline .even a
+{ background: transparent; }
+
+
+/* border-color */
+
+#footer,
+#main .article .articleHeader,
+#main .section .sectionHeader,
+#main .posts .post .postHeader,
+#main #commentFb h1,
+#main #comment h1,
+#main .categoryHeader,
+#sub #localNav .lnavTitle,
+#sub .menu .menuTitle,
+.freetxt h3,
+.freetxt .lv3,
+.freetxt hr,
+.freetxt .box01,
+#main .summary .post a .postContents h1
+{ border-color: #1360BA; }
+
+#header #headerNav ul,
+#header #headerNav ul li a,
+#main .summary .post,
+#main .search .post,
+#main #entryRelational ul,
+#main #entryRelational ul li,
+#sub #localNav ul,
+#sub #localNav ul li,
+#main .contentsNav,
+#main .serialNav
+{ border-color: #D0CDCA; }
+
+.freetxt table,
+.freetxt table th,
+.freetxt table td,
+#main .contentsNav p.pager a:hover,
+#main .contentsNav p.pager a:focus,
+#main .serialNav ul li.index,
+#main .mailForm .mailStep li
+{ border-color: #B8B5B0; }
+
+#main #blogComment .relation .comment:after {
+  border-color: transparent transparent #EEECE2 transparent;
+}
+
+#main .mailForm .mailStep li.current .icon {
+  border-color: #F6F5F0 transparent;
+}
+
+
+/* icons */
+
+#main .posts .post .postContents p.moreLink a,
+#main .summary .post a .postContents p.moreLink b,
+.freetxt a.linkBtn:before,
+.home #main #pickup .post a .postContents p.moreLink b
+{ background-image: url(../images/base/arrow_01_blue.png); }
+
+#main .search .post p.permalink a,
+#sub #localNav ul li a
+{ background-image: url(../images/base/arrow_02_blue.png); }
+
+#main #blogComment h2,
+#main .sitemap ul li,
+.freetxt h3,
+.freetxt .lv3
+{ background-image: url(../images/base/bullet_02_blue.png); }
+
+#main .sitemap ul li ul li,
+.freetxt ul li
+{ background-image: url(../images/base/bullet_01_blue.png); }
+
+
+/* globalNav */
+
+#globalNav {
+  background: #185BB0;
+  border-style: solid;
+  border-width: 2px 0;
+  border-color: #1E67BD transparent #0D3F99;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1352A6), to(#1E67BD));
+  background-image: -webkit-linear-gradient(top, #1352A6, #1E67BD);
+  background-image: -moz-linear-gradient(top, #1352A6, #1E67BD);
+  background-image: -ms-linear-gradient(top, #1352A6, #1E67BD);
+  background-image: -o-linear-gradient(top, #1352A6, #1E67BD);
+  background-image: linear-gradient(top, #1352A6, #1E67BD);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#1352A6, endcolorstr=#1E67BD));
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#1352A6, endcolorstr=#1E67BD))";
+}
+
+#globalNav ul {
+  border-color: #0D3F99;
+}
+
+  #globalNav ul li {
+    float: left;
+  }
+
+    #globalNav ul li a {
+      color: #ECF0F0;
+      border-color: #0D3F99;
+      text-shadow: 0 0 .3em rgba(0,32,64,.3);
+    }
+
+      #globalNav ul li a:hover,
+      #globalNav ul li a:focus,
+      #globalNav ul li.stay a:link,
+      #globalNav ul li.stay a:visited {
+        background-color: #1B69BC;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#165EB3), to(#2174C5));
+        background-image: -webkit-linear-gradient(top, #165EB3, #2174C5);
+        background-image: -moz-linear-gradient(top, #165EB3, #2174C5);
+        background-image: -ms-linear-gradient(top, #165EB3, #2174C5);
+        background-image: -o-linear-gradient(top, #165EB3, #2174C5);
+        background-image: linear-gradient(top, #165EB3, #2174C5);
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#165EB3, endcolorstr=#2174C5));
+        -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#165EB3, endcolorstr=#2174C5))";
+      }
+
+#globalNav ul li ul
+{ background-color: #F6F5F0; }
+
+#globalNav ul li ul li a {
+  border-color: #D0CDCA;
+}
+
+#globalNav ul li ul li a:link,
+#globalNav ul li ul li a:visited,
+#globalNav ul li.stay ul li a:link,
+#globalNav ul li.stay ul li a:visited {
+  background: #F6F5F0;
+  filter: none;
+}
+
+#globalNav ul li ul li a:hover,
+#globalNav ul li ul li a:focus,
+#globalNav ul li.stay ul li a:hover,
+#globalNav ul li.stay ul li a:focus {
+  background: #EEECE2;
+  filter: none;
+}
+
+
+/* searchBox */
+
+#header #searchBox {
+  background-color: #F6F5F0;
+  border-color: #B8B5B0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EBE9E2), to(#F6F5EF));
+  background-image: -webkit-linear-gradient(top, #EBE9E2, #F6F5EF);
+  background-image: -moz-linear-gradient(top, #EBE9E2, #F6F5EF);
+  background-image: -ms-linear-gradient(top, #EBE9E2, #F6F5EF);
+  background-image: -o-linear-gradient(top, #EBE9E2, #F6F5EF);
+  background-image: linear-gradient(top, #EBE9E2, #F6F5EF);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#EBE9E2, endcolorstr=#F6F5EF));
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#EBE9E2, endcolorstr=#F6F5EF))";
+}
+
+
+/* contactBnr */
+
+  .contactBnr a {
+    border-color: #B8B5B0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#EEECE2));
+    background-image: -webkit-linear-gradient(top, #FFFFFF, #EEECE2);
+    background-image: -moz-linear-gradient(top, #FFFFFF, #EEECE2);
+    background-image: -ms-linear-gradient(top, #FFFFFF, #EEECE2);
+    background-image: -o-linear-gradient(top, #FFFFFF, #EEECE2);
+    background-image: linear-gradient(top, #FFFFFF, #EEECE2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#FFFFFF, endcolorstr=#EEECE2));
+    -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#FFFFFF, endcolorstr=#EEECE2))";
+  }
+
+  .contactBnr a:hover,
+  .contactBnr a:focus {
+    border-color: #1360BA;
+  }
+
+    .contactBnr a .icon {
+      background-color: #1360BA;
+    }
+
+
+/*!
+ * smart phone START
+ * ---------------------------------------------
+ */
+
+@media only screen and (max-width: 723px) {
+
+#main #entryRelational .sectionContents ul li a
+{ background-image: url(../images/base/arrow_02_blue.png); }
+
+#main #entryRelational .sectionContents ul li a:hover,
+#main #entryRelational .sectionContents ul li a:focus
+{ background-color: #F6F5F0; }
+
+#main .contentsNav p.pager a.back,
+#main .contentsNav p.pager a.forward,
+#main .serialNav ul li.index a
+{ border-color: #B8B5B0; }
+
+}
+
+/*!
+ * smart phone END
+ * ---------------------------------------------
+ */

@@ -1,0 +1,62 @@
+<!-- BEGIN_MODULE Entry_Body -->
+<div class="recent posts">
+<!-- BEGIN notFound -->
+<p class="notFound">コンテンツは準備中です。</p>
+<!-- END notFound -->
+
+<!-- BEGIN entry:loop -->
+<article class="post">
+<!-- BEGIN title:veil -->
+  <header class="postHeader">
+    <div class="postHeaderInner">
+      <h1 class="title"><a href="{permalink}">{title}</a></h1>
+      <p class="date"><span class="dateY">{date#Y}</span><span class="sep">年</span><span class="dateM">{date#m}</span><span class="sep">月</span><span class="dateD">{date#d}<span class="sep">日</span></p>
+    <!--/.postHeaderInner --></div>
+<!--#include file="/include/entry/entry_social_plugins_s.html" -->
+  <!--/.postHeader --></header>
+<!-- END title:veil -->
+
+  <div class="postContents freetxt">
+<!--#include file="/admin/entry/title.html"-->
+
+<!-- BEGIN column:veil -->
+<!--#include file="/include/column.html"-->
+<!-- END column:veil -->
+<!-- BEGIN continueLink:veil -->
+<p class="moreLink"><a href="{continueUrl}">この記事の続きを読む</a></p>
+<!-- END continueLink:veil -->
+
+<!-- BEGIN adminEntryEdit -->
+    <div class="adminEntryEdit">
+<!--#include file="/admin/entry/edit.html"-->
+<!--#include file="/admin/entry/add.html"-->
+    <!--/.adminEntryEdit --></div>
+<!-- END adminEntryEdit -->
+  <!--/.postContents freetxt --></div>
+
+  <footer class="postFooter">
+<!-- BEGIN tag:veil -->
+<dl class="tag">
+  <dt>タグ</dt>
+  <dd><!-- BEGIN tag:loop --><a href="{url}">{name}</a><!-- BEGIN glue --><span class="sep">,&nbsp;</span><!-- END glue --><!-- END tag:loop --></dd>
+</dl>
+<!-- END tag:veil -->
+
+<div class="meta">
+<!-- BEGIN category:veil -->
+  <p class="category"><!-- BEGIN category:loop --><a href="{url}">{name}</a><!-- BEGIN glue -->&nbsp;&lt;&nbsp;<!-- END glue --><!-- END category:loop --></p>
+<!-- END category:veil -->
+  <p class="date">{date#Y}年{date#m}月{date#d}日 {date#H}:{date#i}:{date#s}</p>
+  <p class="backToTop"><a href="#document" title="ページ先頭" class="backToTop">▲</a></p>
+<!--/.meta --></div>
+
+<!--#include file="/admin/entry/action.html"-->
+  <!--/.postFooter --></footer>
+
+<!--/.post --></article>
+<!-- END entry:loop -->
+
+<!-- /.recent posts --></div>
+
+<!--#include file="/include/common/contents_nav.html" -->
+<!-- END_MODULE Entry_Body -->
