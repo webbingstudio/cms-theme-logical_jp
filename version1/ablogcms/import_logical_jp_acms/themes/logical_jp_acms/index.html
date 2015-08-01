@@ -1,0 +1,52 @@
+<!--#include file="/include/common/doctype.html" -->
+<!--#include file="/include/layout_meta.html" -->
+<body class="category category-%{CID}">
+<!--#include file="/include/common/fb_jssdk.html" -->
+<div id="document">
+<!--#include file="/admin/action.html" -->
+<!--#include file="/include/layout_header.html" -->
+<!--#include file="/include/common/global_nav.html" -->
+  <div id="wrapper">
+    <div id="main" role="main">
+
+<!-- BEGIN_MODULE Touch_Category -->
+<!--#include file="/include/common/topic_path.html" -->
+<!--#include file="/include/index/index_category_header.html" -->
+<!--#include file="/include/index/index_recent_summary.html" -->
+
+<!-- END_MODULE Touch_Category -->
+<!-- BEGIN_MODULE Touch_Tag -->
+<nav class="topicPath">
+  <p><a href="%{BLOG_URL}" class="home">ホーム</a><span class="sep"> &gt; </span>タグ: <!-- BEGIN_MODULE Tag_Filter --><!-- BEGIN tagBox --><!-- BEGIN selected:loop -->{name}<!-- BEGIN glue --><span class="sep"> &gt; </span><!-- END glue --><!-- END selected:loop --><!-- END tagBox --><!-- END_MODULE Tag_Filter --></p>
+<!-- /.topicPath --></nav>
+
+<div class="categoryHeader categoryNoImage">
+  <h1 class="categoryTitle">タグ: <!-- BEGIN_MODULE Tag_Filter --><!-- BEGIN tagBox --><!-- BEGIN selected:loop -->{name}<!-- BEGIN glue --><span class="sep"> &gt; </span><!-- END glue --><!-- END selected:loop --><!-- END tagBox --><!-- END_MODULE Tag_Filter --></h1>
+<!-- /.categoryHeader --></div>
+<!--#include file="/include/index/index_recent_search.html" -->
+
+<!-- END_MODULE Touch_Tag -->
+<!-- BEGIN_MODULE Touch_User -->
+<nav class="topicPath">
+  <p><a href="%{BLOG_URL}" class="home">ホーム</a><span class="sep"> &gt; </span>%{USER_NAME}のコンテンツ</p>
+<!-- /.topicPath --></nav>
+
+<div class="categoryHeader categoryNoImage">
+  <h1 class="categoryTitle">%{USER_NAME}のコンテンツ</h1>
+<!-- /.categoryHeader --></div>
+<!--#include file="/include/index/index_recent_search.html" -->
+
+<!-- END_MODULE Touch_User -->
+
+    <!--/#main --></div>
+<!-- BEGIN_MODULE Touch_Category -->
+<!--#include file="/include/layout_sub_page.html" -->
+<!-- END_MODULE Touch_Category -->
+<!-- BEGIN_MODULE Touch_NotCategory -->
+<!--#include file="/include/layout_sub_other.html" -->
+<!-- END_MODULE Touch_NotCategory -->
+  <!--/#wrapper --></div>
+<!--#include file="/include/layout_footer.html" -->
+<!--/#document --></div>
+</body>
+</html>
