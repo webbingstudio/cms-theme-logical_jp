@@ -1192,23 +1192,7 @@
 
 #sub .fbPage {
   margin-bottom: 1.6em;
-  padding: 0 5px 6px;
-  border-style: solid;
-  border-color: #729FD4;
-  border-width: 1px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
 }
-
-  #sub .fbPage .fbcomments,
-  #sub .fbPage .fb_iframe_widget,
-  #sub .fbPage .fb_iframe_widget iframe,
-  #sub .fbPage .fb_iframe_widget span {
-      width: 100% !important;
-  }
 
 
 /* sitemap */
@@ -1655,13 +1639,6 @@
   display: block;
   margin: -1em 0 2em;
   font-size: 87.5%;
-}
-
-#sub .fbPage .fbcomments,
-#sub .fbPage .fb_iframe_widget,
-#sub .fbPage .fb_iframe_widget iframe,
-#sub .fbPage .fb_iframe_widget span {
-    height: 200px !important;
 }
 
 
