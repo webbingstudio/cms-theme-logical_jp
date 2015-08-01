@@ -14,8 +14,10 @@
 <link rel="stylesheet" href="/resources/css/ifie6.css">
 <![endif]-->
 
-<link rel="stylesheet" href="/css/acms.css">
-<link rel="stylesheet" href="/resources/css/acms_ex.css">
+<link href="/css/acms-admin.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="/css/acms.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/resources/css/acms_ex_xxx.css">
 <!-- BEGIN_MODULE Blog_Field --><!-- BEGIN blogColor:veil -->
 <!-- BEGIN blogColor:touch#blue --><link rel="stylesheet" href="/resources/css/color_blue.css"><!-- END blogColor:touch#blue -->
 <!-- BEGIN blogColor:touch#green --><link rel="stylesheet" href="/resources/css/color_green.css"><!-- END blogColor:touch#green -->
@@ -23,16 +25,27 @@
 <!-- BEGIN blogColor:touch#black --><link rel="stylesheet" href="/resources/css/color_black.css"><!-- END blogColor:touch#black -->
 <!-- END blogColor:veil --><!-- END_MODULE Blog_Field -->
 
-<!-- BEGIN_MODULE Js --><script type="text/javascript" src="/index.js{arguments}" charset="UTF-8" id="acms-js"></script><!-- END_MODULE Js -->
-
-<script src="/resources/js/jquery.easing.js"></script>
-<script src="/resources/js/common.js"></script>
+<!-- BEGIN_MODULE Js -->
+<script src="/acms.js{arguments}" charset="UTF-8" id="acms-js"></script><!-- END_MODULE Js -->
+<script>
+	ACMS.Ready(function() {
+		new ACMS.SyncLoader()
+			.next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/jquery.easing.js')
+			.next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/common.js')
+			.next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/acms_config.js')
+			.load();
+	});
+</script>
 <!-- BEGIN_MODULE Touch_Top -->
-<script src="/resources/js/jquery.ws_slidemenu.js"></script>
-<script src="/resources/js/home.js"></script>
+<script>
+	ACMS.Ready(function() {
+		new ACMS.SyncLoader()
+			.next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/jquery.ws_slidemenu.js')
+			.next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/home.js')
+			.load();
+	});
+</script>
 <!-- END_MODULE Touch_Top -->
-
-<script src="/resources/js/acms_config.js"></script>
 
 <script type="text/javascript">
   window.___gcfg = {lang: 'ja'};
