@@ -47,6 +47,9 @@
 /* backToTop */
 
 #footer .backToTop {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
   width: 32px;
   height: 96px;
   background-color: #999;
@@ -60,34 +63,35 @@
   -ms-box-shadow: 0 0 6px rgba(0,0,0,.3);
   -o-box-shadow: 0 0 6px rgba(0,0,0,.3);
   box-shadow: 0 0 6px rgba(0,0,0,.3);
-  }
-  #footer .backToTop a {
-    overflow: hidden;
-    display: block;
-    width: 32px;
-    height: 48px;
-    text-indent: -999px;
-    text-decoration: none;
-  }
-  #footer .backToTop a.up {
-    -webkit-border-radius: 6px 0 0 0;
-    -moz-border-radius: 6px 0 0 0;
-    -ms-border-radius: 6px 0 0 0;
-    -o-border-radius: 6px 0 0 0;
-    border-radius: 6px 0 0 0;
-    background-position: 50% -290px;
-  }
-  #footer .backToTop a.down {
-    -webkit-border-radius: 0 0 0 6px;
-    -moz-border-radius: 0 0 0 6px;
-    -ms-border-radius: 0 0 0 6px;
-    -o-border-radius: 0 0 0 6px;
-    border-radius: 0 0 0 6px;
-    background-position: 50% -378px;
-  }
-  #footer .backToTop a:hover {
-    background-color: #BBB;
-  }
+  z-index: 99;
+}
+#footer .backToTop a {
+  overflow: hidden;
+  display: block;
+  width: 32px;
+  height: 48px;
+  text-indent: -999px;
+  text-decoration: none;
+}
+#footer .backToTop a.up {
+  -webkit-border-radius: 6px 0 0 0;
+  -moz-border-radius: 6px 0 0 0;
+  -ms-border-radius: 6px 0 0 0;
+  -o-border-radius: 6px 0 0 0;
+  border-radius: 6px 0 0 0;
+  background-position: 50% -290px;
+}
+#footer .backToTop a.down {
+  -webkit-border-radius: 0 0 0 6px;
+  -moz-border-radius: 0 0 0 6px;
+  -ms-border-radius: 0 0 0 6px;
+  -o-border-radius: 0 0 0 6px;
+  border-radius: 0 0 0 6px;
+  background-position: 50% -378px;
+}
+#footer .backToTop a:hover {
+  background-color: #BBB;
+}
 
 
 /* localNav */
