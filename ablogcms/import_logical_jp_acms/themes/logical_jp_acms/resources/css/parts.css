@@ -248,10 +248,6 @@
     z-index: 11;
   }
 
-  #main .categoryNoImage .categoryHeaderFilter {
-    display: none;
-  }
-
   #main .categoryNoImage h1 {
     position: static;
     padding: 0;
@@ -1409,6 +1405,7 @@
   height: auto;
   margin: 0 0 2.4em;
   padding: 2.4em 0 0;
+  background-image: none !important;
   border-style: solid;
   border-width: 3px 0 0;
   border-color: #999;
