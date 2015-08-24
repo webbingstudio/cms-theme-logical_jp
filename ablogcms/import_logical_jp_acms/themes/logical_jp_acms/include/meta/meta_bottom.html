@@ -10,9 +10,6 @@
 <link rel="stylesheet" href="/resources/css/parts.css">
 <link rel="stylesheet" href="/resources/css/textdecoration.css">
 <!-- BEGIN_MODULE Touch_Top --><link rel="stylesheet" href="/resources/css/home.css"><!-- END_MODULE Touch_Top -->
-<!--[if lte IE 6]>
-<link rel="stylesheet" href="/resources/css/ifie6.css">
-<![endif]-->
 
 <link href="/css/acms-admin.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="/css/acms.css" rel="stylesheet">
@@ -28,22 +25,22 @@
 <!-- BEGIN_MODULE Js -->
 <script src="/acms.js{arguments}" charset="UTF-8" id="acms-js"></script><!-- END_MODULE Js -->
 <script>
-	ACMS.Ready(function() {
-		new ACMS.SyncLoader()
-			.next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/jquery.easing.js')
-			.next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/common.js')
-			.next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/acms_config.js')
-			.load();
-	});
+  ACMS.Ready(function() {
+    new ACMS.SyncLoader()
+      .next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/jquery.easing.js')
+      .next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/common.js')
+      .next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/acms_config.js')
+      .load();
+  });
 </script>
 <!-- BEGIN_MODULE Touch_Top -->
 <script>
-	ACMS.Ready(function() {
-		new ACMS.SyncLoader()
-			.next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/jquery.ws_slidemenu.js')
-			.next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/home.js')
-			.load();
-	});
+  ACMS.Ready(function() {
+    new ACMS.SyncLoader()
+      .next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/jquery.ws_slidemenu.js')
+      .next('%{HTTP_THEMES_DIR}logical_jp_acms/resources/js/home.js')
+      .load();
+  });
 </script>
 <!-- END_MODULE Touch_Top -->
 
