@@ -1,8 +1,0 @@
-tpl_top         : home.html
-tpl_index       : index.html
-tpl_detail      : entry.html
-tpl_404         : 404.html
-tpl_admin       : admin.html
-tpl_entry_edit  : entry.html
-tpl_entry_add   : entry.html
-tpl_login       : login.html

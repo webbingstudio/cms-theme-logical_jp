@@ -34,7 +34,7 @@
     <th>Facebookコメント<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogFbComment" class="tooltipIcon" /></th>
     <td>
 <label for="input-blogFbComment-on"><input type="checkbox" name="blogFbComment[1]" value="1" id="input-blogFbComment-on"{blogFbComment[1]:checked#1} /> Facebookコメントを使用する</label>     <input type="hidden" name="field[]" value="blogFbComment" />
-      <p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">Facebookコメントを選択した場合は、「FacebookアプリケーションID」も必ず入力してください。コメントの管理は、公式サイトの「<a href="https://developers.facebook.com/tools/comments" target="_blank" style="text-decoration: underline;">コメントモデレーションツール</a>」ページで行います。</p>
+      <p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">Facebookコメントを選択した場合は、「管理者のFacebookID」も必ず入力してください。コメントの管理は、公式サイトの「<a href="https://developers.facebook.com/tools/comments" target="_blank" style="text-decoration: underline;">コメントモデレーションツール</a>」ページで行います。</p>
     </td>
   </tr>
 </table>
@@ -77,18 +77,18 @@
     </td>
   </tr>
   <tr>
-    <th>FacebookアプリケーションID<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogFbAppID" class="tooltipIcon" /></th>
+    <th>管理者のFacebookID<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogFbAdmins" class="tooltipIcon" /></th>
     <td>
-      <input type="text" name="blogFbAppID" value="{blogFbAppID}" size="40" style="width: 95%;" />
-      <input type="hidden" name="field[]" value="blogFbAppID" />
-      <p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">Page Plugin・いいね！ボタンを利用するためには、<a href="https://developers.facebook.com" target="_blank" style="text-decoration: underline;">Facebook開発者</a>への登録とアプリケーションIDの取得が必要です。</p>
+      <input type="text" name="blogFbAdmins" value="{blogFbAdmins}" size="40" style="width: 95%;" />
+      <input type="hidden" name="field[]" value="blogFbAdmins" />
+      <p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">Facebookのアクセス解析を利用するためには、入力後、<a href="https://www.facebook.com/insights/" target="_blank" style="text-decoration: underline;">ドメインインサイト</a>への登録が必要です。ブログが非公開になっていると登録できません。<br />複数人登録する場合は、IDを半角カンマで区切って入力してください。</p>
     </td>
   </tr>
   <tr>
     <th>og:image<img src="/images/tooltip.gif" alt="ヘルプ" width="12" height="12" id="tooltip-blogOgpImage" class="tooltipIcon" /></th>
     <td>
       <!-- BEGIN blogOgpImage@path:veil -->
-      <img src="%{ARCHIVES_DIR}{blogOgpImage@tinyPath}" />
+      <img src="%{ARCHIVES_DIR}{blogOgpImage@path}" />
       <input type="hidden" name="blogOgpImage@old" value="{blogOgpImage@path}" /><br />
       <label>
         <input type="checkbox" name="blogOgpImage@edit" value="delete" />削除
@@ -97,10 +97,10 @@
       <input type="file" name="blogOgpImage" size="20" />
       <input type="hidden" name="field[]" value="blogOgpImage" />
       <input type="hidden" name="blogOgpImage:extension" value="image" />
-      <input type="hidden" name="blogOgpImage@size" value="1200" />
-      <input type="hidden" name="blogOgpImage@tinyWidth" value="400" />
+      <input type="hidden" name="blogOgpImage@size" value="300" />
+      <input type="hidden" name="blogOgpImage@tinyWidth" value="100" />
       <input type="hidden" name="blogOgpImage@filename" value="" />
-      <p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">縦横比1.91:1程度の画像を用意してください。2015年時点のFacebookへのシェアには、横1200ピクセル・縦630ピクセルが最適と言われています。</p>
+      <p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">縦横300ピクセル以上の、正方形画像を用意してください。</p>
     </td>
   </tr>
   <tr>
@@ -142,8 +142,8 @@
       <input type="file" name="blogHeaderLogo" size="20" />
       <input type="hidden" name="field[]" value="blogHeaderLogo" />
       <input type="hidden" name="blogHeaderLogo:extension" value="image" />
-      <input type="hidden" name="blogHeaderLogo@height" value="128" />
-      <p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">高さ128ピクセル以上の、正方形に近い画像を用意してください。約50%に縮小表示されます。</p>
+      <input type="hidden" name="blogHeaderLogo@height" value="64" />
+      <p style="margin: 1em 0 0; padding: .5em; background: #FFF; border: 1px solid #D66;">高さ64ピクセル以上の、正方形に近い画像を用意してください。</p>
     </td>
   </tr>
   <tr>

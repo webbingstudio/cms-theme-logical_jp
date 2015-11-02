@@ -9,6 +9,7 @@
 /* sprites */
 
 #mainVisual .mvNav .icon,
+#main #fbPage h1,
 #main .twitterBtn a
 {
   background-image: url(../images/base/sprites_01.png);
@@ -318,21 +319,45 @@
 #main #fbPage {
   overflow: hidden;
   float: left;
-  width: 500px;
+  width: 592px;
   margin-bottom: 1.6em;
-  margin-right: 30px;
+  padding: 1.6em 0 .8em;
+  border-style: solid;
+  border-color: #729FD4;
+  border-width: 1px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
 }
 
+  #main #fbPage h1 {
+    height: 38px;
+    line-height: 38px;
+    margin: 0 1em 10px;
+    padding-left: 50px;
+    background-position: -400px 0;
+    font-size: 180%;
+    vertical-align: middle;
+  }
+
   #main #fbPage .sectionContents {
-    width: 100%;
-    padding: 0;
+    padding: 0 5px;
+  }
+
+  #main #fbPage .fbcomments,
+  #main #fbPage .fb_iframe_widget,
+  #main #fbPage .fb_iframe_widget iframe,
+  #main #fbPage .fb_iframe_widget span {
+      width: 100% !important;
   }
 
 
 /* twitter */
 
 #main .twitterBtn {
-  float: left;
+  float: right;
   overflow: hidden;
   width: 336px;
   margin-bottom: 3.2em;
@@ -383,8 +408,9 @@
 /* social */
 
 #main .social {
-  float: left;
-  width: 430px;
+  float: right;
+  width: 280px;
+  padding-right: 56px;
   margin: 0;
 }
 
@@ -396,13 +422,6 @@
   #main .social .weibo {
     float: left;
     height: 100px;
-  }
-
-  #main .social .hatena,
-  #main .social .twitter,
-  #main .social .facebook,
-  #main .social .mixi {
-    width: 95px;
   }
 
   #main .social .hatena,
@@ -482,8 +501,8 @@
 #main .contents #fbPage {
   float: none;
   width: auto;
-  margin-right: 0;
 }
+
 
 }
 
@@ -614,6 +633,15 @@
   width: auto;
   margin: 0 1em 1.6em;
 }
+
+  #main .contents #fbPage h1 {
+    height: auto !important; /* for Modern Browser */
+    height: 40px; /* for IE */
+    min-height: 40px; /* for Modern Browser */
+    line-height: 1.22; /* 22px */
+    padding-left: 50px;
+    font-size: 180%;
+  }
 
 #main .contents .banner {
   margin: 0 1em 1em;

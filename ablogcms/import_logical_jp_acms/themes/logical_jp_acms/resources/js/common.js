@@ -4,33 +4,45 @@
 
 ========================================== */
 
-
-/* User Agent
-https://w3g.jp/blog/js_browser_sniffing2015
-========================================== */
-
-var _ua = (function(u){
-  return {
-    Tablet:(u.indexOf("windows") != -1 && u.indexOf("touch") != -1)
-      || u.indexOf("ipad") != -1
-      || (u.indexOf("android") != -1 && u.indexOf("mobile") == -1)
-      || (u.indexOf("firefox") != -1 && u.indexOf("tablet") != -1)
-      || u.indexOf("kindle") != -1
-      || u.indexOf("silk") != -1
-      || u.indexOf("playbook") != -1,
-    Mobile:(u.indexOf("windows") != -1 && u.indexOf("phone") != -1)
-      || u.indexOf("iphone") != -1
-      || u.indexOf("ipod") != -1
-      || (u.indexOf("android") != -1 && u.indexOf("mobile") != -1)
-      || (u.indexOf("firefox") != -1 && u.indexOf("mobile") != -1)
-      || u.indexOf("blackberry") != -1
-  }
-})(window.navigator.userAgent.toLowerCase());
-
 (function($){ // start jquery
 
+/* scrollFix
+========================================== */
+
+$.fn.wsScrollFix = function(options){
+  if(window.innerHeight) {
+    var Ch = window.innerHeight;
+  } else {
+    var Ch = document.documentElement.clientHeight;
+  }
+  var defaults = {
+    Ih : Ch
+  };
+  var settings = $.extend({}, defaults, options);
+
+  return this.each(function(i){
+    var St = $($.browser.safari ? 'body' : 'html').scrollTop();
+    var Sb = St + settings.Ih;
+    var Oh = $(this).height();
+    var Top = Sb - Oh - 64;
+
+    $(this).css({
+      position: 'absolute',
+      top: Top,
+      right: '0',
+      zIndex: 99,
+    });
+  });
+};
+
 var wsUA = function() {
-  if(_ua.Mobile) {
+  var ua = navigator.userAgent.toLowerCase();
+  $.browser.iphone = /iphone/.test(ua);
+  $.browser.ipod = /ipod/.test(ua);
+  $.browser.ipad = /ipad/.test(ua);
+  $.browser.android = /android/.test(ua);
+  $.browser.iemobile = /iemobile/.test(ua);
+  if($.browser.iphone || $.browser.ipod || $.browser.ipad || $.browser.android || $.browser.iemobile) {
     return 'sp';
   } else {
     return 'full';
@@ -47,8 +59,21 @@ $(window).ready(function() {
     $('#main #commentFb, #footer .backToTop, #main .socialS, #main #contentsWrapper .socialW').remove();
   } else {
     $('#footer').append('<p class="backToTop"><a href="#document" class="up">ページ先頭</a><a href="#footer" class="down">ページ末尾</a></p>');
+    $('#footer .backToTop').wsScrollFix();
   }
 
+});
+
+$(window).scroll(function() {
+  if(wsBrowser != 'sp'){
+    $('#footer .backToTop').wsScrollFix();
+  }
+});
+
+$(window).resize(function() {
+  if(wsBrowser != 'sp'){
+    $('#footer .backToTop').wsScrollFix();
+  }
 });
 
 
