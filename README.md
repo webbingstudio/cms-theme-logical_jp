@@ -1,6 +1,14 @@
 Theme "logical_jp" Series
 ====================================
 
+サポート終了のお知らせ
+------------------------------------
+
+「logical_jp」テーマはサポートを終了しました。  
+ご利用いただきありがとうございました m(__)m
+
+- - - - - - - - - - - - - - - - - - -
+
 Author: Seiko Kuchida  
 mail[at]webbingstudio.com  
 http://webbingstudio.com/
@@ -8,6 +16,7 @@ http://webbingstudio.com/
 Copyright 2013 WebbingStudio
 
 - - - - - - - - - - - - - - - - - - -
+
 
 概要
 ------------------------------------
